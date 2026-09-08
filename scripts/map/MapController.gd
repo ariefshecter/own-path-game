@@ -98,7 +98,6 @@ func _on_node_selected(n_data: Dictionary) -> void:
 	if n_type == 0: # BATTLE
 		get_tree().change_scene_to_file("res://scenes/Battle.tscn")
 	elif n_type == 1: # EVENT
-		# Event sementara kembali render map
-		render_map()
+		get_tree().change_scene_to_file("res://scenes/EventScreen.tscn")
 	elif n_type == 2: # SHOP
 		get_tree().change_scene_to_file("res://scenes/ShopScreen.tscn")

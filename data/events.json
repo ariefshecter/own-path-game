@@ -1,0 +1,65 @@
+[
+  {
+    "id": "event_warung_kopi",
+    "title": "Pertemuan di Kedai Kopi Pinggir Jalan",
+    "story": "Hujan deras turun tiba-tiba. Kamu berteduh di teras kedai kopi kecil sambil memegang ransel lusuhmu. Seorang perempuan yang juga sedang berteduh menoleh dan tersenyum ramah kepadamu: 'Hujannya awet ya. Mau berbagi payung atau sekadar kopi panas?'",
+    "options": [
+      {
+        "text": "Beli dua kopi panas dan mengobrol (Biaya: 15 Koin)",
+        "cost_coins": 15,
+        "reward_mental": 15,
+        "reward_card": "card_sweet_text",
+        "result_text": "Kalian mengobrol hangat tentang mimpi masing-masing. Untuk pertama kalinya sejak keluar dari rumah, kamu merasa didengar. Kamu mendapatkan kartu 'Pesan Manis Darinya'!"
+      },
+      {
+        "text": "Tersenyum sopan lalu diam menikmati suara hujan (Gratis)",
+        "cost_coins": 0,
+        "reward_mental": 8,
+        "reward_card": null,
+        "result_text": "Keheningan yang menenangkan. Aroma tanah basah meredakan ketegangan di kepalamu. Mental pulih +8."
+      }
+    ]
+  },
+  {
+    "id": "event_kucing_tersesat",
+    "title": "Anak Kucing di Bawah Gerobak",
+    "story": "Di sudut gang sempit menuju kosan barumu, ada anak kucing kurus kedinginan yang mengeong pelan. Tatapannya mengingatkanmu pada dirimu sendiri saat baru melangkah keluar dari gerbang rumah.",
+    "options": [
+      {
+        "text": "Beri sisa sosis dari kantongmu (Biaya: 5 Koin)",
+        "cost_coins": 5,
+        "reward_mental": 12,
+        "reward_card": null,
+        "result_text": "Anak kucing itu makan dengan lahap lalu menggosokkan kepalanya ke kakimu. Hatimu terasa jauh lebih ringan. Mental pulih +12."
+      },
+      {
+        "text": "Lewati saja, dompetmu sendiri sedang sekarat",
+        "cost_coins": 0,
+        "reward_mental": -4,
+        "reward_card": null,
+        "result_text": "Kamu berjalan cepat dengan rasa bersalah yang sedikit menggigit. Mental berkurang -4."
+      }
+    ]
+  },
+  {
+    "id": "event_paman_jauh",
+    "title": "Papasan dengan Kerabat Jauh",
+    "story": "Di lampu merah, kamu berpapasan dengan paman jauhmu yang mengendarai mobil ber-AC. Kaca mobil terbuka, matanya menatapmu dari atas ke bawah: 'Lho, kamu ngapain jalan kaki bawa ransel gede begini? Orang tuamu nyariin tuh!'",
+    "options": [
+      {
+        "text": "Tersenyum tegar dan katakan sedang merintis jalan sendiri",
+        "cost_coins": 0,
+        "reward_mental": 5,
+        "reward_card": null,
+        "result_text": "Pamanmu mendengus ragu lalu tancap gas. Keteguhanmu tidak goyah. Mental +5."
+      },
+      {
+        "text": "Buru-buru belok ke gang lain sebelum dia ceramah panjang",
+        "cost_coins": 0,
+        "reward_mental": 0,
+        "reward_card": null,
+        "result_text": "Kamu berhasil kabur dari ceramah 30 menit tentang indahnya menjadi pegawai negeri."
+      }
+    ]
+  }
+]

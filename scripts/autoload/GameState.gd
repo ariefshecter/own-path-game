@@ -15,6 +15,12 @@ var permanent_savings: int = 0
 # Status Hubungan Romansa (0: Mekar Indah, 1: Gesekan/Retak, 2: Kandas/Sendiri)
 var romance_stage: int = 0
 
+# Deck kartu aktif pemain
+var deck: Array = [
+	"card_refuse", "card_refuse", "card_breathe", 
+	"card_breathe", "card_indomie_nasi", "card_kucing_oren", "card_ignore_call"
+]
+
 # Peta aktif mini chapter saat ini
 var map_floors: Array = []
 var current_node_id: String = ""

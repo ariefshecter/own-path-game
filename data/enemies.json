@@ -3,10 +3,12 @@
     "id": "enemy_guilt",
     "name": "Rasa Bersalah & Broadcast WA",
     "chapter": 1,
+    "mini_chapter": [1, 2],
+    "is_boss": false,
     "resolve_hp": 32,
     "actions": [
-      { "intent": "ATTACK", "value": 6, "dialogue": "Ibu membagikan artikel hoax: 'Bahaya durhaka pada orang tua bagi kesehatan ginjal'." },
-      { "intent": "DEFEND", "value": 5, "dialogue": "Ayah mengirim foto album keluarga waktu kamu masih bayi dan nurut." },
+      { "intent": "ATTACK", "value": 6, "dialogue": "Ibu membagikan artikel hoax: 'Bahaya durhaka bagi ginjal'." },
+      { "intent": "DEFEND", "value": 5, "dialogue": "Ayah mengirim foto album keluarga waktu kamu masih bayi dan penurut." },
       { "intent": "DEBUFF", "value": 1, "dialogue": "'Pamanmu yang PNS baru saja beli kulkas 2 pintu.'" }
     ]
   },
@@ -14,22 +16,52 @@
     "id": "enemy_family_call",
     "name": "Panggilan Telepon Jam Makan Malam",
     "chapter": 1,
+    "mini_chapter": [2, 3],
+    "is_boss": false,
     "resolve_hp": 40,
     "actions": [
       { "intent": "ATTACK", "value": 8, "dialogue": "'Kapan pulang? Jangan sampai tetangga kira kamu buronan pinjol.'" },
-      { "intent": "ATTACK", "value": 10, "dialogue": "'Anak tetangga sebelah yang dulu nilainya jelek sekarang gajinya dua digit.'" },
+      { "intent": "ATTACK", "value": 10, "dialogue": "'Anak tetangga sebelah sekarang gajinya dua digit.'" },
       { "intent": "DEFEND", "value": 8, "dialogue": "Ibu mendadak batuk-batuk dramatis di telepon." }
     ]
   },
   {
-    "id": "enemy_rent_bill",
-    "name": "Ibu Kos Penagih Janji",
-    "chapter": 2,
-    "resolve_hp": 55,
+    "id": "enemy_tetangga_julid",
+    "name": "Tetangga Julid Saat Mudik Singkat",
+    "chapter": 1,
+    "mini_chapter": [3, 4],
+    "is_boss": false,
+    "resolve_hp": 48,
     "actions": [
-      { "intent": "ATTACK", "value": 12, "dialogue": "'Mas/Mbak, tanggal 1 tinggal besok lho. Wifi mau saya cabut nih.'" },
-      { "intent": "DEBUFF", "value": 2, "dialogue": "Token listrik berteriak kencang: *TIT TIT TIT TIT*." },
-      { "intent": "ATTACK", "value": 14, "dialogue": "Struk ATM keluar dengan saldo Rp 12.500,-." }
+      { "intent": "ATTACK", "value": 10, "dialogue": "'Kerja di perantauan kok badannya makin kurus kering le?'" },
+      { "intent": "DEBUFF", "value": 2, "dialogue": "'Teman seangkatanmu kemarin baru nikah mewah di gedung lho.'" },
+      { "intent": "DEFEND", "value": 10, "dialogue": "Senyum palsu penuh sindiran membuat dadamu sesak." }
+    ]
+  },
+  {
+    "id": "enemy_birokrasi_kos",
+    "name": "Birokrasi Pindah & Kunci Kos Rusak",
+    "chapter": 1,
+    "mini_chapter": [4],
+    "is_boss": false,
+    "resolve_hp": 52,
+    "actions": [
+      { "intent": "ATTACK", "value": 11, "dialogue": "Surat domisili ditolak RT karena fotokopi kurang satu lembar." },
+      { "intent": "DEFEND", "value": 12, "dialogue": "Kunci pintu kamar macet saat kamu lelah pulang kerja." },
+      { "intent": "ATTACK", "value": 13, "dialogue": "Air kran mendadak mati saat sabun masih penuh di muka." }
+    ]
+  },
+  {
+    "id": "enemy_boss_father_shadow",
+    "name": "Bayangan Otoritas Ayah",
+    "chapter": 1,
+    "mini_chapter": [5],
+    "is_boss": true,
+    "resolve_hp": 75,
+    "actions": [
+      { "intent": "ATTACK", "value": 14, "dialogue": "'Sejak kapan kamu merasa lebih pintar dari orang yang membesarkanmu?!'" },
+      { "intent": "DEFEND", "value": 15, "dialogue": "Tatapan dingin tanpa kata yang dulu selalu membuatmu gemetar." },
+      { "intent": "ATTACK", "value": 16, "dialogue": "'Kalau kamu gagal di luar sana, jangan pernah sebut namaku lagi!'" }
     ]
   }
 ]

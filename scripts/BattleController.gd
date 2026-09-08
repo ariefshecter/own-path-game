@@ -48,12 +48,24 @@ func load_data() -> void:
 	if enemy_file:
 		var parsed = JSON.parse_string(enemy_file.get_as_text())
 		if parsed is Array and parsed.size() > 0:
-			enemy_data = parsed[0] # Default musuh pertama: Rasa Bersalah
+			# Filter musuh sesuai lantai & mini chapter
+			var candidates = []
+			for en in parsed:
+				if GameState.current_floor == 5 and en.get("is_boss", false):
+					candidates.append(en)
+				elif GameState.current_floor < 5 and not en.get("is_boss", false):
+					candidates.append(en)
+			if candidates.is_empty():
+				candidates = parsed
+			enemy_data = candidates[randi() % candidates.size()]
 			
-	deck = [
-		"card_refuse", "card_refuse", "card_breathe", 
-		"card_breathe", "card_overtime", "card_coffee", "card_ignore_call"
-	]
+	if GameState.deck.is_empty():
+		deck = [
+			"card_refuse", "card_refuse", "card_breathe", 
+			"card_breathe", "card_overtime", "card_coffee", "card_ignore_call"
+		]
+	else:
+		deck = GameState.deck.duplicate()
 
 func start_battle(enemy: Dictionary) -> void:
 	enemy_data = enemy
@@ -177,10 +189,25 @@ func on_victory() -> void:
 	GameState.run_coins += 25
 	GameState.player_sanity = player_sanity
 	log_label.text = "Kamu berhasil melewati tekanan ini! (+25 Koin Run)"
-	end_turn_btn.text = "LANJUT MELANGKAH"
+	
 	end_turn_btn.disabled = false
 	end_turn_btn.pressed.disconnect(_on_end_turn_pressed)
-	end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
+	
+	# Cek apakah ini bos lantai 5 mini chapter 5 (Tamat Chapter 1)
+	if GameState.current_floor == 5 and GameState.current_mini_chapter == 5 and GameState.current_chapter == 1:
+		end_turn_btn.text = "CHAPTER 1 SELESAI"
+		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ChapterClear.tscn"))
+	elif GameState.current_floor == 5:
+		# Mini chapter selesai, lanjut ke mini chapter berikutnya
+		GameState.current_mini_chapter += 1
+		GameState.current_floor = 1
+		GameState.map_floors.clear()
+		GameState.current_node_id = ""
+		end_turn_btn.text = "MINI CHAPTER BERIKUTNYA"
+		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
+	else:
+		end_turn_btn.text = "LANJUT MELANGKAH"
+		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
 
 func on_defeat() -> void:
 	# Pindah ke adegan desakan orang tua
