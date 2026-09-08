@@ -202,7 +202,8 @@ func execute_enemy_turn() -> void:
 		if unblocked > 0:
 			animate_player_damage()
 	elif intent == "DEFEND":
-		pass
+		enemy_hp += val
+		log_label.text = "%s memperkuat pertahanan psikologisnya (+%d Ketahanan)!" % [enemy_data.get("name"), val]
 		
 	enemy_action_idx += 1
 	update_ui()

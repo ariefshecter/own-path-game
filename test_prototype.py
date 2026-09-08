@@ -133,7 +133,8 @@ def run_prototype():
             if unblocked > 0:
                 print(f"   Mentalmu berkurang {unblocked}. Sisa Mental: {sanity}")
         elif current_enemy_action["intent"] == "DEFEND":
-            print(f"   {enemy['name']} memperkuat pertahanan psikologisnya.")
+            enemy_hp += current_enemy_action["value"]
+            print(f"   {enemy['name']} memperkuat pertahanan psikologisnya (+{current_enemy_action['value']} HP)!")
             
         enemy_turn_idx += 1
         turn += 1

@@ -5,11 +5,11 @@
     "chapter": 1,
     "mini_chapter": [1, 2],
     "is_boss": false,
-    "resolve_hp": 32,
+    "resolve_hp": 48,
     "actions": [
-      { "intent": "ATTACK", "value": 6, "dialogue": "Ibu membagikan artikel hoax: 'Bahaya durhaka bagi ginjal'." },
-      { "intent": "DEFEND", "value": 5, "dialogue": "Ayah mengirim foto album keluarga waktu kamu masih bayi dan penurut." },
-      { "intent": "DEBUFF", "value": 1, "dialogue": "'Pamanmu yang PNS baru saja beli kulkas 2 pintu.'" }
+      { "intent": "ATTACK", "value": 11, "dialogue": "Ibu membagikan artikel hoax: 'Bahaya durhaka bagi ginjal'." },
+      { "intent": "DEFEND", "value": 8, "dialogue": "Ayah mengirim foto album keluarga waktu kamu masih bayi dan penurut." },
+      { "intent": "ATTACK", "value": 13, "dialogue": "'Pamanmu yang PNS baru saja beli kulkas 2 pintu.'" }
     ]
   },
   {
@@ -18,11 +18,11 @@
     "chapter": 1,
     "mini_chapter": [2, 3],
     "is_boss": false,
-    "resolve_hp": 40,
+    "resolve_hp": 58,
     "actions": [
-      { "intent": "ATTACK", "value": 8, "dialogue": "'Kapan pulang? Jangan sampai tetangga kira kamu buronan pinjol.'" },
-      { "intent": "ATTACK", "value": 10, "dialogue": "'Anak tetangga sebelah sekarang gajinya dua digit.'" },
-      { "intent": "DEFEND", "value": 8, "dialogue": "Ibu mendadak batuk-batuk dramatis di telepon." }
+      { "intent": "ATTACK", "value": 13, "dialogue": "'Kapan pulang? Jangan sampai tetangga kira kamu buronan pinjol.'" },
+      { "intent": "ATTACK", "value": 15, "dialogue": "'Anak tetangga sebelah sekarang gajinya dua digit.'" },
+      { "intent": "DEFEND", "value": 10, "dialogue": "Ibu mendadak batuk-batuk dramatis di telepon." }
     ]
   },
   {
@@ -31,11 +31,11 @@
     "chapter": 1,
     "mini_chapter": [3, 4],
     "is_boss": false,
-    "resolve_hp": 48,
+    "resolve_hp": 68,
     "actions": [
-      { "intent": "ATTACK", "value": 10, "dialogue": "'Kerja di perantauan kok badannya makin kurus kering le?'" },
-      { "intent": "DEBUFF", "value": 2, "dialogue": "'Teman seangkatanmu kemarin baru nikah mewah di gedung lho.'" },
-      { "intent": "DEFEND", "value": 10, "dialogue": "Senyum palsu penuh sindiran membuat dadamu sesak." }
+      { "intent": "ATTACK", "value": 15, "dialogue": "'Kerja di perantauan kok badannya makin kurus kering le?'" },
+      { "intent": "ATTACK", "value": 16, "dialogue": "'Teman seangkatanmu kemarin baru nikah mewah di gedung lho.'" },
+      { "intent": "DEFEND", "value": 12, "dialogue": "Senyum palsu penuh sindiran membuat dadamu sesak." }
     ]
   },
   {
@@ -44,11 +44,11 @@
     "chapter": 1,
     "mini_chapter": [4],
     "is_boss": false,
-    "resolve_hp": 52,
+    "resolve_hp": 76,
     "actions": [
-      { "intent": "ATTACK", "value": 11, "dialogue": "Surat domisili ditolak RT karena fotokopi kurang satu lembar." },
-      { "intent": "DEFEND", "value": 12, "dialogue": "Kunci pintu kamar macet saat kamu lelah pulang kerja." },
-      { "intent": "ATTACK", "value": 13, "dialogue": "Air kran mendadak mati saat sabun masih penuh di muka." }
+      { "intent": "ATTACK", "value": 16, "dialogue": "Surat domisili ditolak RT karena fotokopi kurang satu lembar." },
+      { "intent": "DEFEND", "value": 14, "dialogue": "Kunci pintu kamar macet saat kamu lelah pulang kerja." },
+      { "intent": "ATTACK", "value": 18, "dialogue": "Air kran mendadak mati saat sabun masih penuh di muka." }
     ]
   },
   {
@@ -57,11 +57,12 @@
     "chapter": 1,
     "mini_chapter": [5],
     "is_boss": true,
-    "resolve_hp": 75,
+    "resolve_hp": 105,
     "actions": [
-      { "intent": "ATTACK", "value": 14, "dialogue": "'Sejak kapan kamu merasa lebih pintar dari orang yang membesarkanmu?!'" },
+      { "intent": "ATTACK", "value": 18, "dialogue": "'Sejak kapan kamu merasa lebih pintar dari orang yang membesarkanmu?!'" },
       { "intent": "DEFEND", "value": 15, "dialogue": "Tatapan dingin tanpa kata yang dulu selalu membuatmu gemetar." },
-      { "intent": "ATTACK", "value": 16, "dialogue": "'Kalau kamu gagal di luar sana, jangan pernah sebut namaku lagi!'" }
+      { "intent": "ATTACK", "value": 20, "dialogue": "'Kalau kamu gagal di luar sana, jangan pernah sebut namaku lagi!'" },
+      { "intent": "ATTACK", "value": 24, "dialogue": "'Kamu bukan lagi bagian dari keluarga ini!'" }
     ]
   }
 ]
