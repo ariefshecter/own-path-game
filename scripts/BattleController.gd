@@ -155,8 +155,11 @@ func apply_effect(eff: Dictionary) -> void:
 	
 	if etype == "DAMAGE" and target == "ENEMY":
 		enemy_hp = max(0, enemy_hp - val)
+		# Animasi hentakan musuh saat terkena serangan
+		animate_enemy_hit()
 	elif etype == "SHIELD" and target == "SELF":
 		player_shield += val
+		animate_player_shield()
 	elif etype == "GAIN_COINS" and target == "SELF":
 		run_coins += val
 		GameState.run_coins = run_coins
@@ -194,6 +197,10 @@ func execute_enemy_turn() -> void:
 		player_shield -= blocked
 		player_sanity = max(0, player_sanity - unblocked)
 		GameState.player_sanity = player_sanity
+		# Animasi hentakan musuh menyerang & player terkena dampak
+		animate_enemy_attack()
+		if unblocked > 0:
+			animate_player_damage()
 	elif intent == "DEFEND":
 		pass
 		
@@ -204,6 +211,32 @@ func execute_enemy_turn() -> void:
 		on_defeat()
 	else:
 		start_player_turn()
+
+func animate_enemy_hit() -> void:
+	var tw = create_tween().set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
+	tw.tween_property(enemy_portrait, "modulate", Color(1.0, 0.3, 0.3), 0.08)
+	tw.parallel().tween_property(enemy_portrait, "position:x", 12.0, 0.08)
+	tw.tween_property(enemy_portrait, "modulate", Color.WHITE, 0.15)
+	tw.parallel().tween_property(enemy_portrait, "position:x", 0.0, 0.15)
+
+func animate_enemy_attack() -> void:
+	var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(enemy_portrait, "scale", Vector2(1.18, 1.18), 0.12)
+	tw.tween_property(enemy_portrait, "scale", Vector2(1.0, 1.0), 0.15)
+
+func animate_player_damage() -> void:
+	var tw = create_tween().set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
+	tw.tween_property(player_sanity_label, "modulate", Color(0.9, 0.2, 0.2), 0.1)
+	tw.parallel().tween_property(player_sanity_label, "scale", Vector2(1.25, 1.25), 0.1)
+	tw.tween_property(player_sanity_label, "modulate", Color.WHITE, 0.2)
+	tw.parallel().tween_property(player_sanity_label, "scale", Vector2(1.0, 1.0), 0.2)
+
+func animate_player_shield() -> void:
+	var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(player_shield_label, "modulate", Color(0.4, 0.8, 1.0), 0.1)
+	tw.parallel().tween_property(player_shield_label, "scale", Vector2(1.25, 1.25), 0.1)
+	tw.tween_property(player_shield_label, "modulate", Color.WHITE, 0.2)
+	tw.parallel().tween_property(player_shield_label, "scale", Vector2(1.0, 1.0), 0.2)
 
 func on_victory() -> void:
 	run_coins += 25
