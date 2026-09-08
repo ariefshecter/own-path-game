@@ -1,10 +1,14 @@
 extends Control
 
-@onready var quote_label: Label = $VBoxContainer/QuoteBox/QuoteLabel
+@onready var quote_label: Label = $VBoxContainer/QuoteBox/MarginContainer/HBoxContainer/QuoteLabel
+@onready var portrait_rect: TextureRect = $VBoxContainer/QuoteBox/MarginContainer/HBoxContainer/PortraitRect
 @onready var try_again_btn: Button = $VBoxContainer/ActionBox/TryAgainButton
 @onready var surrender_btn: Button = $VBoxContainer/ActionBox/SurrenderButton
 
+const SPRITE_MOTHER = preload("res://assets/sprites/mother.png")
+
 func _ready() -> void:
+	portrait_rect.texture = SPRITE_MOTHER
 	try_again_btn.pressed.connect(_on_try_again)
 	surrender_btn.pressed.connect(_on_surrender)
 	
@@ -18,7 +22,6 @@ func _ready() -> void:
 
 func _on_try_again() -> void:
 	GameState.reset_run()
-	# Kembali ke Kamar Kos untuk persiapan ulang
 	get_tree().change_scene_to_file("res://scenes/HubScreen.tscn")
 
 func _on_surrender() -> void:

@@ -1,18 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cprologue01"]
+[gd_scene load_steps=2 format=3 uid="uid://cprologue01"]
 
 [ext_resource type="Script" path="res://scripts/Prologue.gd" id="1_prologue"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_box"]
-bg_color = Color(0.99, 0.98, 0.96, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.3, 0.25, 0.22, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
 
 [node name="Prologue" type="Control"]
 layout_mode = 3
@@ -38,12 +26,12 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 60.0
-offset_top = 100.0
+offset_top = 80.0
 offset_right = -60.0
 offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 24
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="SceneHeader" type="Label" parent="VBoxContainer"]
@@ -56,24 +44,35 @@ horizontal_alignment = 1
 [node name="DialogueBox" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_box")
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/DialogueBox"]
 layout_mode = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = 30
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/DialogueBox/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="SpeakerLabel" type="Label" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
+[node name="Header" type="HBoxContainer" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="PortraitRect" type="TextureRect" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer/Header"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SpeakerLabel" type="Label" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 28
 text = "Nama Pembicara"
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
 layout_mode = 2

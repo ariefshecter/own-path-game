@@ -24,9 +24,9 @@ color = Color(0.96, 0.94, 0.88, 1)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 120.0
+offset_bottom = 100.0
 grow_horizontal = 2
-theme_override_constants/margin_top = 40
+theme_override_constants/margin_top = 30
 
 [node name="StatusLabel" type="Label" parent="TopBar"]
 layout_mode = 2
@@ -41,18 +41,18 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 60.0
-offset_top = 120.0
+offset_top = 110.0
 offset_right = -60.0
-offset_bottom = -60.0
+offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 24
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 30
 text = "✉️ DILEMA HIDUP"
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -61,29 +61,46 @@ autowrap_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="StoryLabel" type="Label" parent="VBoxContainer/StoryPanel"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/StoryPanel"]
 layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/StoryPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="PortraitRect" type="TextureRect" parent="VBoxContainer/StoryPanel/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StoryLabel" type="Label" parent="VBoxContainer/StoryPanel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.25, 0.25, 0.3, 1)
 theme_override_font_sizes/font_size = 22
 text = "Cerita kejadian di perjalanan..."
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="OptionsBox" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 14
 
 [node name="Option1Button" type="Button" parent="VBoxContainer/OptionsBox"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Pilihan 1"
 autowrap_mode = 2
 
 [node name="Option2Button" type="Button" parent="VBoxContainer/OptionsBox"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Pilihan 2"

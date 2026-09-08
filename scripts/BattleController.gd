@@ -2,8 +2,15 @@ extends Control
 
 const CARD_UI_SCENE = preload("res://scenes/CardUI.tscn")
 
+# Sprite assets
+const SPRITE_FATHER = preload("res://assets/sprites/father.png")
+const SPRITE_MOTHER = preload("res://assets/sprites/mother.png")
+const SPRITE_TETANGGA = preload("res://assets/sprites/tetangga_julid.png")
+const SPRITE_PAK_RT = preload("res://assets/sprites/pak_rt.png")
+
 # Nodes
-@onready var enemy_title: Label = $TopArea/EnemyBox/EnemyTitle
+@onready var enemy_title: Label = $TopArea/EnemyBox/EnemyHeader/EnemyTitle
+@onready var enemy_portrait: TextureRect = $TopArea/EnemyBox/EnemyHeader/EnemyPortrait
 @onready var enemy_hp_label: Label = $TopArea/EnemyBox/EnemyHPLabel
 @onready var enemy_intent_label: Label = $TopArea/EnemyBox/EnemyIntentLabel
 @onready var player_sanity_label: Label = $MidArea/PlayerStatus/SanityLabel
@@ -48,7 +55,6 @@ func load_data() -> void:
 	if enemy_file:
 		var parsed = JSON.parse_string(enemy_file.get_as_text())
 		if parsed is Array and parsed.size() > 0:
-			# Filter musuh sesuai lantai & mini chapter
 			var candidates = []
 			for en in parsed:
 				if GameState.current_floor == 5 and en.get("is_boss", false):
@@ -72,22 +78,36 @@ func start_battle(enemy: Dictionary) -> void:
 	enemy_hp = enemy.get("resolve_hp", 30)
 	enemy_action_idx = 0
 	
+	# Pasang portrait musuh sesuai ID
+	var en_id = enemy.get("id", "")
+	if en_id == "enemy_boss_father_shadow":
+		enemy_portrait.texture = SPRITE_FATHER
+	elif en_id == "enemy_family_call" or en_id == "enemy_guilt":
+		enemy_portrait.texture = SPRITE_MOTHER
+	elif en_id == "enemy_tetangga_julid":
+		enemy_portrait.texture = SPRITE_TETANGGA
+	elif en_id == "enemy_birokrasi_kos":
+		enemy_portrait.texture = SPRITE_PAK_RT
+	else:
+		enemy_portrait.texture = SPRITE_MOTHER
+	
 	draw_pile = deck.duplicate()
 	draw_pile.shuffle()
 	discard_pile.clear()
 	
-	player_sanity = player_max_sanity
+	player_sanity = GameState.player_sanity
+	player_max_sanity = GameState.player_max_sanity
 	player_energy = player_max_energy
 	player_shield = 0
+	run_coins = GameState.run_coins
 	
 	update_ui()
 	start_player_turn()
 
 func start_player_turn() -> void:
 	player_energy = player_max_energy
-	player_shield = 0 # Shield reset tiap awal giliran
+	player_shield = 0
 	
-	# Draw 4 kartu
 	for i in range(4):
 		if draw_pile.is_empty():
 			draw_pile = discard_pile.duplicate()
@@ -139,13 +159,14 @@ func apply_effect(eff: Dictionary) -> void:
 		player_shield += val
 	elif etype == "GAIN_COINS" and target == "SELF":
 		run_coins += val
+		GameState.run_coins = run_coins
 	elif etype == "GAIN_ENERGY" and target == "SELF":
 		player_energy += val
 	elif etype == "DAMAGE" and target == "SELF":
 		player_sanity = max(0, player_sanity - val)
+		GameState.player_sanity = player_sanity
 
 func _on_end_turn_pressed() -> void:
-	# Buang semua kartu tersisa di tangan
 	for child in hand_container.get_children():
 		discard_pile.append(child.card_data.get("id"))
 		child.queue_free()
@@ -172,8 +193,8 @@ func execute_enemy_turn() -> void:
 		var unblocked = val - blocked
 		player_shield -= blocked
 		player_sanity = max(0, player_sanity - unblocked)
+		GameState.player_sanity = player_sanity
 	elif intent == "DEFEND":
-		# Musuh menambah armor jika ada
 		pass
 		
 	enemy_action_idx += 1
@@ -193,12 +214,10 @@ func on_victory() -> void:
 	end_turn_btn.disabled = false
 	end_turn_btn.pressed.disconnect(_on_end_turn_pressed)
 	
-	# Cek apakah ini bos lantai 5 mini chapter 5 (Tamat Chapter 1)
 	if GameState.current_floor == 5 and GameState.current_mini_chapter == 5 and GameState.current_chapter == 1:
 		end_turn_btn.text = "CHAPTER 1 SELESAI"
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ChapterClear.tscn"))
 	elif GameState.current_floor == 5:
-		# Mini chapter selesai, simpan & lanjut ke mini chapter berikutnya
 		GameState.advance_mini_chapter()
 		end_turn_btn.text = "MINI CHAPTER BERIKUTNYA"
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
@@ -207,7 +226,6 @@ func on_victory() -> void:
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
 
 func on_defeat() -> void:
-	# Pindah ke adegan desakan orang tua
 	get_tree().change_scene_to_file("res://scenes/ParentPressure.tscn")
 
 func update_ui() -> void:
@@ -224,7 +242,6 @@ func update_ui() -> void:
 	player_energy_label.text = "Energi: %d/%d" % [player_energy, player_max_energy]
 	run_coins_label.text = "Koin Run: %d" % run_coins
 	
-	# Update status playability kartu di tangan
 	for child in hand_container.get_children():
 		if child.has_method("set_playable"):
 			var cost = child.card_data.get("energy_cost", 1)
