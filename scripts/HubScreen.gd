@@ -86,6 +86,7 @@ func update_ui() -> void:
 
 func _on_buy_sanity_upgrade() -> void:
 	if GameState.permanent_savings >= COST_SANITY_UPGRADE:
+		AudioManager.play_coin_sfx()
 		GameState.permanent_savings -= COST_SANITY_UPGRADE
 		GameState.player_max_sanity += 10
 		GameState.player_sanity = GameState.player_max_sanity
@@ -96,6 +97,7 @@ func _on_buy_sanity_upgrade() -> void:
 
 func _on_buy_energy_upgrade() -> void:
 	if GameState.permanent_savings >= COST_ENERGY_UPGRADE:
+		AudioManager.play_coin_sfx()
 		GameState.permanent_savings -= COST_ENERGY_UPGRADE
 		GameState.deck.append("card_focus")
 		GameState.purchased_meta_upgrades.append("card_focus_unlock")

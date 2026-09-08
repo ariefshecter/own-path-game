@@ -55,6 +55,7 @@ func _on_slider_changed(value: float) -> void:
 
 func _on_deposit_pressed() -> void:
 	if GameState.deposit_to_bank(deposit_val):
+		AudioManager.play_coin_sfx()
 		log_label.text = "Berhasil menyetor %d Koin ke rekening tabungan abadi!" % deposit_val
 		bank_slider.value = 0
 		update_ui()

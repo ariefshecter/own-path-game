@@ -60,6 +60,7 @@ func _on_mouse_exited() -> void:
 func _gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		if is_playable:
+			AudioManager.play_card_sfx()
 			# Efek klik menekan sekejap
 			var tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 			tween.tween_property(self, "scale", Vector2(0.95, 0.95), 0.08)

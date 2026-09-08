@@ -213,6 +213,7 @@ func execute_enemy_turn() -> void:
 		start_player_turn()
 
 func animate_enemy_hit() -> void:
+	AudioManager.play_hit_sfx()
 	var tw = create_tween().set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
 	tw.tween_property(enemy_portrait, "modulate", Color(1.0, 0.3, 0.3), 0.08)
 	tw.parallel().tween_property(enemy_portrait, "position:x", 12.0, 0.08)
@@ -225,6 +226,7 @@ func animate_enemy_attack() -> void:
 	tw.tween_property(enemy_portrait, "scale", Vector2(1.0, 1.0), 0.15)
 
 func animate_player_damage() -> void:
+	AudioManager.play_hit_sfx()
 	var tw = create_tween().set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
 	tw.tween_property(player_sanity_label, "modulate", Color(0.9, 0.2, 0.2), 0.1)
 	tw.parallel().tween_property(player_sanity_label, "scale", Vector2(1.25, 1.25), 0.1)
@@ -232,6 +234,7 @@ func animate_player_damage() -> void:
 	tw.parallel().tween_property(player_sanity_label, "scale", Vector2(1.0, 1.0), 0.2)
 
 func animate_player_shield() -> void:
+	AudioManager.play_shield_sfx()
 	var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	tw.tween_property(player_shield_label, "modulate", Color(0.4, 0.8, 1.0), 0.1)
 	tw.parallel().tween_property(player_shield_label, "scale", Vector2(1.25, 1.25), 0.1)
