@@ -18,7 +18,8 @@ func _ready() -> void:
 
 func _on_try_again() -> void:
 	GameState.reset_run()
-	get_tree().change_scene_to_file("res://scenes/MapScreen.tscn")
+	# Kembali ke Kamar Kos untuk persiapan ulang
+	get_tree().change_scene_to_file("res://scenes/HubScreen.tscn")
 
 func _on_surrender() -> void:
 	get_tree().change_scene_to_file("res://scenes/BadEnding.tscn")

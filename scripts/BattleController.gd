@@ -198,11 +198,8 @@ func on_victory() -> void:
 		end_turn_btn.text = "CHAPTER 1 SELESAI"
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ChapterClear.tscn"))
 	elif GameState.current_floor == 5:
-		# Mini chapter selesai, lanjut ke mini chapter berikutnya
-		GameState.current_mini_chapter += 1
-		GameState.current_floor = 1
-		GameState.map_floors.clear()
-		GameState.current_node_id = ""
+		# Mini chapter selesai, simpan & lanjut ke mini chapter berikutnya
+		GameState.advance_mini_chapter()
 		end_turn_btn.text = "MINI CHAPTER BERIKUTNYA"
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
 	else:

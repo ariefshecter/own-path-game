@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=3 uid="uid://cprologue01"]
+
+[ext_resource type="Script" path="res://scripts/Prologue.gd" id="1_prologue"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_box"]
+bg_color = Color(0.99, 0.98, 0.96, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.3, 0.25, 0.22, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Prologue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_prologue")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.94, 0.88, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 100.0
+offset_right = -60.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="SceneHeader" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.45, 0.15, 1)
+theme_override_font_sizes/font_size = 24
+text = "PROLOG: MALAM TERAKHIR DI RUMAH"
+horizontal_alignment = 1
+
+[node name="DialogueBox" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_box")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/DialogueBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/DialogueBox/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="SpeakerLabel" type="Label" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 30
+text = "Nama Pembicara"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="VBoxContainer/DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.25, 0.25, 0.3, 1)
+theme_override_font_sizes/font_size = 24
+text = "Isi dialog narasi percakapan..."
+autowrap_mode = 2
+
+[node name="NextButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "LANJUT (KETUK UNTUK MEMBACA)"
+
+[node name="SkipButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.55, 1)
+theme_override_font_sizes/font_size = 18
+text = "LEWATI PROLOG"

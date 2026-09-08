@@ -1,0 +1,152 @@
+[gd_scene load_steps=2 format=3 uid="uid://chubscreen01"]
+
+[ext_resource type="Script" path="res://scripts/HubScreen.gd" id="1_hub"]
+
+[node name="HubScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hub")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.94, 0.88, 1)
+
+[node name="TopArea" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 180.0
+grow_horizontal = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="RoomTitle" type="Label" parent="TopArea"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 36
+text = "🏠 KAMAR KOS"
+horizontal_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="TopArea"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.35, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "Kapasitas Mental: 50 | Tabungan Bank: 0 Koin"
+horizontal_alignment = 1
+
+[node name="ChapterSelectionBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -280.0
+offset_right = -40.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="PickerTitle" type="Label" parent="ChapterSelectionBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15, 0.4, 0.2, 1)
+theme_override_font_sizes/font_size = 22
+text = "PILIH TAHAPAN PERJALANAN (CHAPTER 1):"
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="ChapterSelectionBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="UpgradesBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 60.0
+offset_top = -60.0
+offset_right = -60.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="UpgradeTitle" type="Label" parent="UpgradesBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.45, 0.15, 1)
+theme_override_font_sizes/font_size = 24
+text = "🛋️ PERBAIKI KAMAR KOS (UPGRADE PERMANEN)"
+
+[node name="Upgrade1Box" type="HBoxContainer" parent="UpgradesBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Upgrade1Info" type="Label" parent="UpgradesBox/Upgrade1Box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 20
+text = "Beli Kasur Lipat (+10 Mental Permanen)"
+
+[node name="Upgrade1Button" type="Button" parent="UpgradesBox/Upgrade1Box"]
+custom_minimum_size = Vector2(160, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "UPGRADE"
+
+[node name="Upgrade2Box" type="HBoxContainer" parent="UpgradesBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Upgrade2Info" type="Label" parent="UpgradesBox/Upgrade2Box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 20
+text = "Buku Catatan Impian (Buka Kartu 'Kuatkan Tekad')"
+
+[node name="Upgrade2Button" type="Button" parent="UpgradesBox/Upgrade2Box"]
+custom_minimum_size = Vector2(160, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "UPGRADE"
+
+[node name="BottomArea" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -220.0
+offset_right = -60.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="LogLabel" type="Label" parent="BottomArea"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.35, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "Kamar kos sepi, tapi ini ruang kebebasanmu."
+horizontal_alignment = 1
+
+[node name="StartRunButton" type="Button" parent="BottomArea"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "MELANGKAH KE PERJALANAN"
