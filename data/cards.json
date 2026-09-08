@@ -1,0 +1,88 @@
+[
+  {
+    "id": "card_refuse",
+    "name": "Menolak Tuntutan",
+    "energy_cost": 1,
+    "type": "ACTION",
+    "effects": [
+      { "target": "ENEMY", "type": "DAMAGE", "value": 7 },
+      { "target": "SELF", "type": "SHIELD", "value": 3 }
+    ],
+    "flavor": "Berkata 'tidak' membutuhkan keberanian terbesar."
+  },
+  {
+    "id": "card_breathe",
+    "name": "Tarik Napas",
+    "energy_cost": 1,
+    "type": "DEFENSE",
+    "effects": [
+      { "target": "SELF", "type": "SHIELD", "value": 8 }
+    ],
+    "flavor": "Dunia tidak akan runtuh jika kamu diam sejenak."
+  },
+  {
+    "id": "card_indomie_nasi",
+    "name": "Indomie Campur Nasi",
+    "energy_cost": 1,
+    "type": "SUPPORT",
+    "effects": [
+      { "target": "SELF", "type": "SHIELD", "value": 6 },
+      { "target": "SELF", "type": "GAIN_ENERGY", "value": 1 }
+    ],
+    "flavor": "Karbo kuadrat andalan akhir bulan. Ahli gizi menangis melihat ini."
+  },
+  {
+    "id": "card_kucing_oren",
+    "name": "Elus Kucing Oren Kosan",
+    "energy_cost": 0,
+    "type": "SUPPORT",
+    "effects": [
+      { "target": "SELF", "type": "SHIELD", "value": 4 }
+    ],
+    "flavor": "Dia mencakar sedikit, tapi mendengkur keras. Kewarasanmu terselamatkan."
+  },
+  {
+    "id": "card_overtime",
+    "name": "Kerja Lembur Bagai Kuda",
+    "energy_cost": 2,
+    "type": "ACTION",
+    "effects": [
+      { "target": "ENEMY", "type": "DAMAGE", "value": 14 },
+      { "target": "SELF", "type": "GAIN_COINS", "value": 25 }
+    ],
+    "flavor": "Tubuh remuk, mata panda, tapi setidaknya saldo bertambah sedikit."
+  },
+  {
+    "id": "card_ignore_call",
+    "name": "Pura-pura Sinyal Hilang",
+    "energy_cost": 1,
+    "type": "DEFENSE",
+    "effects": [
+      { "target": "SELF", "type": "SHIELD", "value": 5 },
+      { "target": "SELF", "type": "DRAW_CARDS", "value": 1 }
+    ],
+    "flavor": "'Halo halo Ma? Suaranya putus-putus...' *tut tut tut*"
+  },
+  {
+    "id": "card_sweet_text",
+    "name": "Pesan Manis Darinya",
+    "energy_cost": 1,
+    "type": "SUPPORT",
+    "effects": [
+      { "target": "SELF", "type": "SHIELD", "value": 6 },
+      { "target": "SELF", "type": "GAIN_ENERGY", "value": 1 }
+    ],
+    "flavor": "'Semangat ya, jangan lupa makan.' Hangatnya membakar letih seharian."
+  },
+  {
+    "id": "card_bitter_goodbye",
+    "name": "Sisa Kenangan",
+    "energy_cost": 2,
+    "type": "ACTION",
+    "effects": [
+      { "target": "ENEMY", "type": "DAMAGE", "value": 16 },
+      { "target": "SELF", "type": "SHIELD", "value": 4 }
+    ],
+    "flavor": "Hubungan itu telah usai, namun pelajarannya menguatkan pundakmu."
+  }
+]

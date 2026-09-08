@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://cownpathmap01"]
+
+[ext_resource type="Script" path="res://scripts/map/MapController.gd" id="1_map"]
+
+[node name="MapScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_map")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.94, 0.88, 1)
+
+[node name="TopBar" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="HeaderInfo" type="Label" parent="TopBar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 28
+text = "Chapter 1 — Bagian 1 (Lantai 1/5)"
+horizontal_alignment = 1
+
+[node name="StatusInfo" type="Label" parent="TopBar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.35, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "Mental: 50/50  |  Koin: 50  |  Tabungan: 0"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 160.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 1
+
+[node name="FloorsContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 24
+alignment = 1

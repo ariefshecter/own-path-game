@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbadending01"]
+
+[ext_resource type="Script" path="res://scripts/BadEnding.gd" id="1_bad"]
+
+[node name="BadEnding" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bad")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.94, 0.9, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 120.0
+offset_right = -60.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="EndingTitle" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 38
+text = "AKHIR KATA: ANAK KEBANGGAAN"
+horizontal_alignment = 1
+
+[node name="EndingDesc" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.35, 0.35, 0.4, 1)
+theme_override_font_sizes/font_size = 24
+text = "Kamu memutuskan untuk pulang dan mengikuti semua yang mereka minta.
+
+Ayah dan Ibu tersenyum sangat bangga memamerkan pekerjaan barumu ke semua tetangga dan kerabat. Rumah ramai oleh tawa dan pujian.
+
+Mereka mendapatkan piala kebanggaan mereka. Hidupmu terjamin, gajimu tetap, hari-harimu teratur.
+
+Namun jauh di dalam dirimu, mata itu menatap hampa. Kamu hidup, tapi bukan lagi dirimu yang bernapas di sana."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="WarningLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.25, 0.25, 1)
+theme_override_font_sizes/font_size = 18
+text = "(Semua progres, tabungan bank, dan chapter di-reset dari awal)"
+horizontal_alignment = 1
+
+[node name="ResetButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "MULAI DARI NOL"

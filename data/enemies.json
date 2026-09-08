@@ -1,0 +1,35 @@
+[
+  {
+    "id": "enemy_guilt",
+    "name": "Rasa Bersalah & Broadcast WA",
+    "chapter": 1,
+    "resolve_hp": 32,
+    "actions": [
+      { "intent": "ATTACK", "value": 6, "dialogue": "Ibu membagikan artikel hoax: 'Bahaya durhaka pada orang tua bagi kesehatan ginjal'." },
+      { "intent": "DEFEND", "value": 5, "dialogue": "Ayah mengirim foto album keluarga waktu kamu masih bayi dan nurut." },
+      { "intent": "DEBUFF", "value": 1, "dialogue": "'Pamanmu yang PNS baru saja beli kulkas 2 pintu.'" }
+    ]
+  },
+  {
+    "id": "enemy_family_call",
+    "name": "Panggilan Telepon Jam Makan Malam",
+    "chapter": 1,
+    "resolve_hp": 40,
+    "actions": [
+      { "intent": "ATTACK", "value": 8, "dialogue": "'Kapan pulang? Jangan sampai tetangga kira kamu buronan pinjol.'" },
+      { "intent": "ATTACK", "value": 10, "dialogue": "'Anak tetangga sebelah yang dulu nilainya jelek sekarang gajinya dua digit.'" },
+      { "intent": "DEFEND", "value": 8, "dialogue": "Ibu mendadak batuk-batuk dramatis di telepon." }
+    ]
+  },
+  {
+    "id": "enemy_rent_bill",
+    "name": "Ibu Kos Penagih Janji",
+    "chapter": 2,
+    "resolve_hp": 55,
+    "actions": [
+      { "intent": "ATTACK", "value": 12, "dialogue": "'Mas/Mbak, tanggal 1 tinggal besok lho. Wifi mau saya cabut nih.'" },
+      { "intent": "DEBUFF", "value": 2, "dialogue": "Token listrik berteriak kencang: *TIT TIT TIT TIT*." },
+      { "intent": "ATTACK", "value": 14, "dialogue": "Struk ATM keluar dengan saldo Rp 12.500,-." }
+    ]
+  }
+]
