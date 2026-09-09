@@ -42,7 +42,38 @@ Ketidakmampuan melihat masa depan di mana ia bebas bernafas inilah yang membuatn
   Sebelum layar memperlihatkan Rian memutuskan melangkah keluar pintu rumah, ada transisi pemandangan singkat ke sudut meja belajar kamar kosnya yang remang-remang. Kamera menyorot sebuah **botol kaca kecil tanpa label berisi cairan bening/obat pekat** yang tergeletak di samping laptop dan lembar ijazahnya yang basah oleh tetesan air. Sebuah petunjuk visual sunyi bahwa ada tragedi nyata yang sedang terjadi di ruangan itu.
 - **Titik Patah (The Breaking Point):** Rian tersadar dengan dingin: tidak ada celah negosiasi. Berapa pun usianya nanti, ia akan selalu menjadi boneka yang digerakkan oleh kendali orang tuanya. Di kamar kosnya, keputusasaan menutup seluruh harapannya.
 - **Bos 1.5 (Puncak Chapter 1):** *Bayangan Otoritas Ayah* (Wujud trauma psikologis dan figur absolut yang mencengkeram kehidupannya).
-- **Transisi ke Chapter 2:** Di saat kesadarannya perlahan meredup di samping botol kaca itu, muncul halusinasi alternatif di mana Rian tidak meminum cairan tersebut, melainkan mengemas ransel dan melangkah keluar rumah menuju perantauan.
+- **Transisi ke Chapter 2:** Di saat kesadarannya perlahan meredup di samping botol kaca itu, tercipta alur proyeksi di mana Rian tidak meminum cairan tersebut, melainkan mengemas ransel dan menutup pintu kamar untuk melangkah menuju perantauan.
+
+---
+
+### Rincian Lengkap Chapter 2: "Langkah Semu & Hangatnya Seseorang" (2.1 s/d 2.5)
+
+#### Mini Chapter 2.1: "Terminal Bus Antarkota & Gerimis Sore"
+- **Fokus Cerita:** Rian tiba di terminal kota besar dengan satu ransel lusuh dan uang tabungan pas-pasan. Sensasi kebebasan pertama beradu dengan rasa cemas yang menusuk. Hujan deras turun tiba-tiba memaksanya berteduh di teras kedai kopi tenda pinggir terminal.
+- **Momen Temu:** Di sana, ia bertemu seorang gadis sebaya (Gadis Kedai Kopi / "Nadia") yang sedang membantu membereskan cangkir. Melihat Rian yang basah kuyup dan memeluk tasnya erat, Nadia menyodorkan segelas kopi hitam panas gratis sambil tersenyum ramah: *"Hujannya awet ya. Dingin-dingin begini enaknya kopi manis atau cerita hangat."*
+- **Rintangan / Stage:** Calo Tiket yang Memaksa, Dinginnya Angin Malam Terminal, Dompet Tipis.
+- **Bos 2.1:** *Keterasingan Kota Asing* (Rasa takut ditelan oleh kota yang tidak mengenal namamu).
+
+#### Mini Chapter 2.2: "Kamar Kos 2x3 & Klien Pertama"
+- **Fokus Cerita:** Rian menyewa kamar kos petak sempit berpintu triplek tipis di gang sempit. Menggunakan laptop lamanya yang kipasnya berisik, ia mulai menawarkan jasa pembuatan program web/aplikasi sederhana di forum internet. Hubungan dengan Nadia berkembang lewat obrolan ringan tiap sore sepulang kerja.
+- **Mekanik Cerita:** Nadia sesekali membawakan gorengan sisa warung atau pesan singkat yang memulihkan mental Rian di tengah keputusasaan (*"Semangat kodingnya ya, jangan lupa makan"*).
+- **Rintangan / Stage:** Kipas Laptop Macet, Sinyal Wifi Tetangga yang Putus-Nyambung, Klien yang Minta Revisi Tanpa Uang Muka.
+- **Bos 2.2:** *Deadline Tengah Malam & Perut Kosong*.
+
+#### Mini Chapter 2.3: "Boncengan Motor Tua & Mimpi di Tepi Sungai"
+- **Fokus Cerita:** Kencan sederhana pertama mereka. Menikmati angin sore di jembatan pinggir kali sambil makan es krim murah. Rian untuk pertama kalinya menceritakan rahasia terbesarnya: bagaimana ia dulu terpaksa kuliah di jurusan yang dibencinya dan betapa takutnya ia jika kelak gagal. Nadia mendengarkan tanpa menghakimi, menggenggam tangannya erat: *"Bagi orang tuamu kamu mungkin nomor dua, tapi di sini, caramu bertahan itu luar biasa."*
+- **Rintangan / Stage:** Bensin Motor E-strip, Ban Bocor di Tengah Jalan, Rasa Minder Membandingkan Diri.
+- **Bos 2.3:** *Bayangan Rasa Tak Pantas Dicintai*.
+
+#### Mini Chapter 2.4: "Tagihan yang Mulai Menumpuk & Panggilan Rumah Pertama"
+- **Fokus Cerita:** Masa manis mulai tergesek realitas. Proyek freelance ada yang mangkir bayar. Di saat yang sama, ponselnya bergetar menampilkan nomor rumah yang selama ini ia abaikan. Suara Ibu terdengar serak menuntut kepastian: *"Kamu mau pura-pura sukses sampai kapan di sana? Pulang, Papa masih bisa usahakan jalur titipan itu."*
+- **Gesekan Asmara:** Rian mulai menarik diri karena stres keuangan. Saat Nadia mengajaknya jalan, Rian menolak ketus karena harus mengejar uang sewa kos. Rasa bersalah mulai merayap.
+- **Rintangan / Stage:** Tagihan Listrik Menunggak, Pesan WA Rumah yang Menghakimi, Keraguan di Meja Kerja.
+- **Bos 2.4:** *Bisikan Halus Rasa Bersalah*.
+
+#### Mini Chapter 2.5: "Janji di Bawah Lampu Jalan yang Berkedip"
+- **Fokus Cerita:** Puncak Chapter 2. Menyadari dirinya sempat menjauh, Rian menemui Nadia di kedai kopi saat tutup. Mereka saling meminta maaf di bawah temaram lampu jalan. Rian berjanji akan bekerja lebih keras demi membangun masa depan yang stabil untuk mereka berdua, sementara Nadia berjanji akan setia mendampinginya. Sebuah pelukan hangat menjadi penutup chapter... sebelum badai ekonomi di Chapter 3 menghancurkan segalanya.
+- **Bos 2.5 (Puncak Chapter 2):** *Kecemasan Masa Depan & Janji Rapuh*.
 
 ---
 

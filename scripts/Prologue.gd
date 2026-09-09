@@ -85,7 +85,7 @@ func update_dialogue() -> void:
 			portrait_rect.visible = false
 		
 		if current_step == dialogues.size() - 1:
-			next_btn.text = "MELANGKAH KE JALAN BAYANGAN..."
+			next_btn.text = "MENUTUP PINTU DAN MELANGKAH..."
 		else:
 			next_btn.text = "LANJUT (KETUK UNTUK MEMBACA)"
 	else:
