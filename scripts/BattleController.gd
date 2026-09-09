@@ -260,7 +260,7 @@ func on_victory() -> void:
 		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
 	else:
 		end_turn_btn.text = "LANJUT MELANGKAH"
-		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MapScreen.tscn"))
+		end_turn_btn.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ExpeditionMap.tscn"))
 
 func on_defeat() -> void:
 	get_tree().change_scene_to_file("res://scenes/ParentPressure.tscn")

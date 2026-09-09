@@ -8,6 +8,11 @@ var current_mini_chapter: int = 1
 var current_floor: int = 1
 var max_floors: int = 5
 
+# Progres ekspedisi mini chapter (1..3 lantai ekspedisi penuh per mini chapter)
+var current_expedition_floor: int = 1
+var current_step: int = 0
+var max_steps: int = 4
+
 # Progres unlock tertinggi
 var max_unlocked_mini_chapter: int = 1
 

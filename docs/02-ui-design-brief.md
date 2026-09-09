@@ -1,39 +1,40 @@
-# Jalan Sendiri (Own Path) — UI Design Brief (A Space for the Unbound Style)
+# Jalan Sendiri — UI Design Brief (Full Expedition & Professional Mobile Standard)
 
-## 1. Purpose & Visual Redirection
-Mengubah arahan visual dari dark/gloomy slate menjadi gaya visual hangat, cerah, ramah, dan bernuansa nostalgia pedesaan/kota tropis 90-an ala *A Space for the Unbound*. UI yang nampak bersahabat dan "fun" menciptakan kontras emosional yang jauh lebih kuat ketika narasi menyajikan kenyataan pahit.
+## 1. Purpose & Visual Philosophy
+Membangun standar visual profesional bergaya anime retro-nostalgia ala *A Space for the Unbound*. UI dirancang ramah, cerah, hangat, dan ekspresif (*warm watercolor paper & sticker aesthetic*) untuk mengontraskan realitas gelap cerita.
 
-## 2. Visual Style & Color Tokens
-- **Latar Belakang (Sky & Sunlight):**
-  - Siang / Pagi: `#8EC5FC` (Langit Biru Lembut) bergradasi ke `#E0C3FC` atau Krem Hangat `#FAF3DD`.
-  - Sore Nostalgia: `#FFA69E` (Peach Sunset) dan `#FFD166` (Kuning Sinar Matahari).
-  - Malam Tenang: `#3D5A80` (Biru Indigo Lembut), bukan hitam legam.
-- **Card & Surface Containers:**
-  - Background Kartu: `#FFFDF7` (Kertas Cat Air Hangat).
-  - Border: `#4A3E3D` (Cokelat Pensil Sketsa, ketebalan 3-4px rounded).
-  - Warna Teks: `#2B2D42` (Arang Gelap).
-- **Aksen Tombol & Indikator:**
-  - Mental (Kesehatan Batin): `#06D6A0` (Hijau Mint Segar).
-  - Energi Aksi: `#FFB703` (Kuning Jeruk Hangat).
-  - Perisai: `#48CAE4` (Biru Air Jernih).
-  - Tombol Utama: Oranye cerah `#FB8500` dengan bayangan pop-out (shadow offset) kartun/stiker.
+## 2. Struktur Peta Ekspedisi 3 Lantai (Integrated Strategies Model)
+Setiap Mini Chapter (dimulai dari 1.1) terdiri dari 3 Lantai Ekspedisi:
+- **Lantai 1 (Masa Awal):** 4 langkah vertikal menuju tangga lantai 2. Variasi 4 stage Tier 1.
+- **Lantai 2 (Eskalasi):** 5-6 langkah vertikal menuju tangga lantai 3. Variasi 6 stage Tier 2.
+- **Lantai 3 (Puncak & Bos):** 7 langkah vertikal dengan 8 variasi stage Tier 3 dan 1 Stage Bos Puncak di puncak langkah ke-7.
 
-## 3. Screen Breakdown
+### Aturan Non-Repeating Stage
+Pada satu jalur lurus/bercabang yang diambil pemain dari langkah pertama hingga langkah terakhir lantai, tidak boleh ada tipe stage yang sama muncul dua kali berturut-turut.
 
-### A. Layar Pertarungan (Battle Screen)
-- Tampilan kartu menyerupai kartu pos atau coretan buku diary bergambar ceria dengan cap stempel lucu.
-- Musuh ditampilkan bukan sebagai monster seram, melainkan ilustrasi ekspresif bergaya komik lokal (misal: "Telepon Rumah Berdering dengan getaran kartun", "Pesan Singkat Mantan bertabur robekan kertas").
-- Bilah status dihias ornamen dedaunan, stiker lucu, atau pita pengukur.
+## 3. Komponen Node Stage (Visual Pop-Up Sticker)
+Node di peta digambar sebagai tombol stiker timbul berukuran 180x90 px:
+1. **[⚔ Masalah]:** Warna oranye kemerahan `#E76F51` dengan ikon pedang sketsa.
+2. **[☕ Warung]:** Warna cokelat kopi hangat `#DDA15E` dengan ikon cangkir kopi.
+3. **[🏪 Kios]:** Warna hijau mint `#2A9D8F` dengan ikon toko buku/fotokopi.
+4. **[✉ Dilema]:** Warna kuning mustard `#E9C46A` dengan ikon amplop surat.
+5. **[👑 Bos]:** Warna merah bata tebal `#D62828` dengan stempel mahkota.
 
-### B. Layar Desakan Orang Tua & Panggilan Rumah (Fail State Screen)
-- Visual: Telepon meja jadul berwarna merah/kuning atau layar ponsel retro bergetar kencang di atas meja kayu beralas taplak kotak-kotak.
-- Balon Dialog Besar: Berisi bujukan bernada menekan dengan pilihan font tebal.
-- Dua Tombol Penentu Nasib:
-  1. Tombol Emas Hangat: `"Keringkan Keringat & Coba Lagi"` (Mengulang mini chapter).
-  2. Tombol Kelabu Memikat: `"Angkat & Menyerahlah Pulang"` (Menuju Bad Ending).
+Garis konektor antar-node digambar menggunakan sistem `_draw()` Godot berupa garis putus-putus pensil cokelat (`#4A3E3D`).
 
-### C. Layar Bad Ending ("Anak Idaman Orang Tua")
-- Ilustrasi bergaya buku cerita: Ayah dan Ibu tersenyum sangat lebar memeluk anaknya yang berseragam PNS/kantoran formal, rumah megah dengan spanduk ucapan selamat.
-- Wajah sang anak digambar hitam-putih tanpa kilau di matanya.
-- Teks penutup: *"Orang tuamu mendapatkan piala kebanggaan mereka. Kamu mendapatkan kepastian hidup... namun kehilangan dirimu sendiri selamanya."*
-- Tombol: *"Mulai Hidup Baru (Semua Progres Dihapus)"*.
+## 4. Rincian 4 Stage Khusus Mini Chapter 1.1
+- **Stage 1A: [⚔ Beban] Debugging Skripsi Bab 4**
+  - Arena pertempuran vs Bug Skripsi & Coretan Tinta Dosen.
+- **Stage 1B: [☕ Warung] Seduh Kopi Warung Kampus**
+  - Layar interaksi santai warung kopi pinggir jalan: memulihkan mental (+15) dan mendapatkan dorongan moral.
+- **Stage 1C: [🏪 Kios] Fotokopi & ATK Barokah**
+  - Tempat menyetor tabungan bank permanen dan membeli kartu perlengkapan skripsi (misal: *Stabilo Warna-warni*, *Flashdisk Cadangan*).
+- **Stage 1D: [✉ Dilema] Ajakan Nongkrong vs Selesaikan Kode**
+  - Kotak dialog dilema berbobot peluang resiko: ikut nongkrong (+Mental tapi -Koin) atau lanjut koding (+Fokus tapi lelah fisik).
+
+## 5. Screen Transitions & State Machine
+Setiap selesai menyelesaikan 1 stage:
+1. Status player (Mental & Koin) tersimpan di `GameState`.
+2. Posisi langkah (`current_step`) bertambah 1.
+3. Layar kembali ke peta lantai aktif dengan node yang sudah diselesaikan berubah warna hijau pudar dan node berikutnya terbuka.
+4. Di langkah terakhir lantai: muncul pintu transisi ke lantai berikutnya. Di lantai 3 langkah ke-7: pintu menuju arena Bos Mini Chapter 1.1 (*Draf Skripsi Tercoret Tinta Merah*).

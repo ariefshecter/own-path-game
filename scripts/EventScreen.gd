@@ -100,4 +100,4 @@ func _on_option_selected(idx: int) -> void:
 	update_status_bar()
 
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/MapScreen.tscn")
+	get_tree().change_scene_to_file("res://scenes/ExpeditionMap.tscn")
