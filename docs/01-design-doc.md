@@ -150,22 +150,37 @@ Ketidakmampuan melihat masa depan di mana ia bebas bernafas inilah yang membuatn
   - **Transisi ke Chapter 4:** Rian selamat melewati malam demam kritis itu. Dengan tubuh kurus dan tatapan yang mengeras dewasa, ia menyadari bahwa ia telah melewati titik terendah dalam hidupnya. Rasa takutnya telah mati. Dari sinilah babak penerimaan sejati dimulai.
 
 #### CHAPTER 4: "Penerimaan Akhir & Senyuman di Detik Terakhir" (Katarsis & Plot Twist)
-*Tema emosional: Menemukan kedamaian batin, memaafkan masa lalu, dan keindahan mimpi.*
-- **Mini Chapter 4.1: Bangkit dari Lantai Dingin**
-  - Karakter menerima bahwa hidup tidak harus sempurna untuk terasa berharga.
-  - Bos 4.1: *Sisa-sisa Penyesalan*.
-- **Mini Chapter 4.2: Secangkir Kopi Pagi Sendiri**
-  - Belajar menikmati kesendirian tanpa rasa takut.
-  - Bos 4.2: *Bayangan Kesepian*.
-- **Mini Chapter 4.3: Mengirim Pesan Damai ke Rumah**
-  - Menolak panggilan bukan lagi karena marah, tapi karena sudah tenang.
-  - Bos 4.3: *Ikatan Trauma Masa Lalu*.
-- **Mini Chapter 4.4: Program Koding Pertama yang Berfungsi Penuh**
-  - Kebahagiaan murni menciptakan sesuatu yang dicintai dari nol.
-  - Bos 4.4: *Keraguan Eksistensial*.
-- **Mini Chapter 4.5: Menutup Mata dengan Damai (The Final Awakening)**
-  - Bos Akhir Game: *Kenyataan yang Tak Terhindarkan*.
-  - **Ending:** Kamera perlahan beralih dari alter-ego yang tersenyum memandang langit cerah ke tubuh Rian asli di ranjang kamar kosnya. Nafasnya melemah, namun bibirnya tersenyum tulus. Di detik terakhirnya, ia membisikkan: *"Ternyata... jalan yang kubayangkan itu sangat indah. Aku bangga padamu, diriku yang lain..."* Layar memudar ke putih lembut.
+*Tema emosional: Menemukan kedamaian batin, memaafkan masa lalu, keindahan mimpi, dan keikhlasan mutlak.*
+
+- **Mini Chapter 4.1: "Bangkit dari Lantai Dingin & Sinar Fajar Pertama"**
+  - **Fokus Cerita:** Rian terbangun dari demam kritis saat sinar matahari pagi menembus celah jendela kamar kosnya. Tubuhnya lemah dan kurus, namun beban sesak di dadanya telah lenyap. Ia menyeduh air panas, menyapu remah-remah masa lalunya, dan membuka jendela lebar-lebar. Ia menerima kenyataan: hidupnya mungkin tidak akan pernah megah, tidak akan pernah memenuhi ekspektasi keluarga, namun detik ini ia bernafas sebagai dirinya sendiri secara utuh.
+  - **Rintangan / Stage:** Sendi yang Masih Kaku, Sisa Demam Semalam, Bersih-bersih Kamar Kos.
+  - **Bos 4.1:** *Sisa-sisa Penyesalan* (Kecemasan masa lalu yang mulai kehilangan kuasanya).
+
+- **Mini Chapter 4.2: "Secangkir Kopi Pagi Sendiri di Kedai yang Sepi"**
+  - **Fokus Cerita:** Berjalan santai menikmati udara pagi menuju kedai kopi tenda tempat pertama kali bertemu Nadia. Kedai itu kini dijaga pemilik aslinya karena Nadia telah pulang ke kampungnya. Rian memesan kopi hitam yang sama, duduk di bangku kayu sudut, dan memandang hujan rintik-rintik. Tidak ada lagi rasa dendam, amarah, atau ratapan. Kenangan manis bersama Nadia kini menjadi memori hangat yang ia syukuri: cinta itu pernah nyata, dan kehangatannya cukup untuk menemani sisa langkahnya.
+  - **Rintangan / Stage:** Bangku Kosong di Seberang Meja, Aroma Kopi Kenangan, Hujan Rintik Damai.
+  - **Bos 4.2:** *Bayangan Kesepian yang Tenang* (Berdamai dengan kesendirian tanpa rasa hampa).
+
+- **Mini Chapter 4.3: "Pesan Terakhir ke Rumah & Putusnya Rantai Trauma"**
+  - **Fokus Cerita:** Rian menyalakan ponselnya kembali setelah berhari-hari dimatikan. Ada puluhan pesan dan panggilan tak terjawab dari rumah. Kali ini, Rian tidak gemetar, takut, atau bernafsu membela diri. Dengan tenang, ia mengetik pesan singkat: *"Ma, Pa, terima kasih sudah membesarkanku. Maaf jika aku tidak bisa menjadi apa yang Papa dan Mama inginkan. Aku baik-baik saja di sini, dan aku memilih untuk tetap menjalani jalanku sendiri. Tolong ikhlaskan aku."* Ia mengirim pesan itu, lalu mematikan kartu SIM selamanya. Rantai manipulasi putus bukan karena orang tuanya sadar, melainkan karena Rian telah merelakan kebutuhan akan pengakuan mereka.
+  - **Rintangan / Stage:** Notifikasi yang Menumpuk, Getaran Nomor Rumah, Ketegasan Hati Menekan 'Kirim'.
+  - **Bos 4.3:** *Gema Otoritas yang Kehilangan Taringnya*.
+
+- **Mini Chapter 4.4: "Baris Kode Terakhir & Karya Kecil yang Bernyawa"**
+  - **Fokus Cerita:** Menggunakan laptop tua yang ia perbaiki seadanya, Rian duduk di meja belajarnya dan mulai menulis kode program sederhana yang sejak dulu ia impikan di malam-malam revisi skripsi. Bukan untuk membuktikan diri kepada orang lain, bukan untuk mengejar piala ranking atau gaji korporat, melainkan murni untuk kebahagiaan mencipta. Ketika program itu selesai dan berjalan sempurna di layarnya (*"Build Succeeded - Hello World"*), air mata haru menetes di pipinya. Ia telah berhasil melahirkan sesuatu yang murni dari jiwanya sendiri.
+  - **Rintangan / Stage:** Baris Kode Terakhir, Logika Algoritma yang Rumit, Kipas Laptop yang Berputar Tenang.
+  - **Bos 4.4:** *Keraguan Eksistensial Terakhir*.
+
+- **Mini Chapter 4.5: "Menutup Mata dengan Damai & Senyuman di Detik Terakhir (The Final Awakening)"**
+  - **Fokus Cerita & Boss:** Puncak penutup ekspedisi imajinasi. Alter-ego Rian berjalan menuju puncak bukit di pinggiran kota saat matahari terbenam memancarkan warna peach keemasan yang indah.
+  - **Bos Terakhir:** *Kenyataan yang Tak Terhindarkan (The Inevitable Reality)*. Pertempuran bukan untuk mengalahkan musuh dengan kebencian, melainkan menyatukan seluruh kartu penerimaan (*Ikhlas, Terima Kasih, Jalan Sendiri, Damai*).
+  - **The Awakening (Ending Plot Twist):** 
+    Setelah pertempuran selesai, alter-ego Rian tersenyum memandang langit cerah. Perlahan, dunia visual cat air yang hangat itu memudar menjadi hening.
+    Kamera beralih kembali ke realitas nyata: Kamar kos sempit di malam wisuda. Botol kaca kecil tanpa label di samping ijazahnya telah kosong. Di atas kasur tipis, tubuh Rian yang asli terbaring diam dalam keheningan malam. Nafasnya tersengal lemah, detak jantungnya perlahan mereda.
+    Namun di wajah pucatnya, terlukis sebuah senyuman tipis yang sangat tulus, damai, dan bercahaya. Dalam hembusan nafas terakhirnya, bibirnya berbisik lirih:
+    *"Ternyata... jalan yang kubayangkan itu sangat indah. Meskipun dingin dan berat, ada cinta di sana, ada kopi hangat, dan ada kebebasan. Aku bangga padamu... diriku yang lain. Terima kasih sudah berani melangkah untukku..."*
+    Mata Rian terpejam perlahan. Layar memudar lembut ke warna putih (*soft fade to white*). Musik BGM akustik melambat hingga denting petikan gitar terakhir di kunci D Mayor yang tenang. Layar menampilkan teks penutup: *"Bagi setiap jiwa yang terbelenggu: semoga kamu menemukan ruang untuk bernafas atas pilihanmu sendiri."*
 
 ---
 
