@@ -37,10 +37,12 @@ Ketidakmampuan melihat masa depan di mana ia bebas bernafas inilah yang membuatn
 - **Bos 1.4:** *Angka Peringkat Kedua* (Monumen rasa bersalah dan perasaan tidak pernah cukup).
 
 #### Mini Chapter 1.5: "Formulir yang Sudah Ditandatangani & Titik Patah"
-- **Fokus Cerita:** Malam setelah wisuda di rumah keluarga. Ayah meletakkan map cokelat berisi berkas lamaran instansi yang sudah diisi dan ditandatangani sepihak oleh koneksi orang dalam. Ketika Rian mencoba berkata pelan bahwa ia ingin melamar di perusahaan teknologi, Ayah mengamuk dan membentak: *"Kamu anak tidak tahu diri! Kamu hidup dari uang Papa, sampai mati pun kamu harus dengar apa kata Papa!"*
-- **Titik Patah (The Breaking Point):** Rian tersadar dengan dingin: tidak ada kompromi. Tidak ada hari esok di mana ia akan diizinkan menjadi dirinya sendiri. Ia kembali ke kamar kosnya malam itu. Di atas kasur tipisnya, keputusasaan menutup seluruh harapannya. Ia memilih bunuh diri.
+- **Fokus Cerita:** Malam setelah wisuda di rumah keluarga. Ayah meletakkan map cokelat berisi berkas lamaran instansi yang sudah diisi dan ditandatangani sepihak oleh koneksi orang dalam. Ketika Rian mencoba berkata pelan bahwa ia ingin mencoba melamar di tempat lain sesuai minatnya, Ayah menatapnya dingin dan berkata dengan nada tenang namun mutlak: *"Semua yang kamu makan, baju yang kamu pakai, sampai biaya kuliahmu itu dari mana? Jangan bertingkah seolah kamu sudah bisa menentukan arah hidupmu sendiri. Selama kamu masih membawa nama keluarga ini, kamu hanya perlu menjalankan apa yang sudah disiapkan."*
+- **Scene Petunjuk / Clue Botol Racun (Foreshadowing):**
+  Sebelum layar memperlihatkan Rian memutuskan melangkah keluar pintu rumah, ada transisi pemandangan singkat ke sudut meja belajar kamar kosnya yang remang-remang. Kamera menyorot sebuah **botol kaca kecil tanpa label berisi cairan bening/obat pekat** yang tergeletak di samping laptop dan lembar ijazahnya yang basah oleh tetesan air. Sebuah petunjuk visual sunyi bahwa ada tragedi nyata yang sedang terjadi di ruangan itu.
+- **Titik Patah (The Breaking Point):** Rian tersadar dengan dingin: tidak ada celah negosiasi. Berapa pun usianya nanti, ia akan selalu menjadi boneka yang digerakkan oleh kendali orang tuanya. Di kamar kosnya, keputusasaan menutup seluruh harapannya.
 - **Bos 1.5 (Puncak Chapter 1):** *Bayangan Otoritas Ayah* (Wujud trauma psikologis dan figur absolut yang mencengkeram kehidupannya).
-- **Transisi:** Saat racun mulai merenggut kesadarannya, muncul ilusi alternatif di mana Rian tidak meminum racun itu, melainkan mengemas ransel dan melangkah keluar rumah menuju terminal perantauan (memulai Chapter 2).
+- **Transisi ke Chapter 2:** Di saat kesadarannya perlahan meredup di samping botol kaca itu, muncul halusinasi alternatif di mana Rian tidak meminum cairan tersebut, melainkan mengemas ransel dan melangkah keluar rumah menuju perantauan.
 
 ---
 
