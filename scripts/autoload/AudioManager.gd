@@ -8,6 +8,7 @@ var sfx_card: AudioStream
 var sfx_coin: AudioStream
 var sfx_hit: AudioStream
 var sfx_shield: AudioStream
+var sfx_keyboard: AudioStream
 var bgm_stream: AudioStream
 
 func _ready() -> void:
@@ -35,6 +36,8 @@ func load_audio_resources() -> void:
 		sfx_hit = load("res://assets/audio/hit.wav")
 	if ResourceLoader.exists("res://assets/audio/shield.wav"):
 		sfx_shield = load("res://assets/audio/shield.wav")
+	if ResourceLoader.exists("res://assets/audio/sfx_keyboard.wav"):
+		sfx_keyboard = load("res://assets/audio/sfx_keyboard.wav")
 	if ResourceLoader.exists("res://assets/audio/bgm_warm_loop.wav"):
 		bgm_stream = load("res://assets/audio/bgm_warm_loop.wav")
 
@@ -66,4 +69,10 @@ func play_shield_sfx() -> void:
 	if sfx_shield:
 		sfx_player.stream = sfx_shield
 		sfx_player.pitch_scale = randf_range(0.95, 1.05)
+		sfx_player.play()
+
+func play_keyboard_sfx() -> void:
+	if sfx_keyboard:
+		sfx_player.stream = sfx_keyboard
+		sfx_player.pitch_scale = randf_range(0.92, 1.08)
 		sfx_player.play()

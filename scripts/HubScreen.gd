@@ -107,11 +107,15 @@ func _on_buy_energy_upgrade() -> void:
 
 func _on_start_run() -> void:
 	GameState.current_mini_chapter = selected_mini_chapter
-	GameState.current_floor = 1
-	GameState.current_expedition_floor = 1
-	GameState.current_step = 0
-	GameState.player_sanity = GameState.player_max_sanity
-	GameState.run_coins = 50
-	GameState.map_floors.clear()
-	GameState.current_node_id = ""
-	get_tree().change_scene_to_file("res://scenes/ExpeditionMap.tscn")
+	if selected_mini_chapter == 1:
+		# Mini Chapter 1.1: Revisi Bab 4 & Koding
+		get_tree().change_scene_to_file("res://scenes/chapters/ch1/Ch1_1_Skripsi.tscn")
+	else:
+		GameState.current_floor = 1
+		GameState.current_expedition_floor = 1
+		GameState.current_step = 0
+		GameState.player_sanity = GameState.player_max_sanity
+		GameState.run_coins = 50
+		GameState.map_floors.clear()
+		GameState.current_node_id = ""
+		get_tree().change_scene_to_file("res://scenes/ExpeditionMap.tscn")

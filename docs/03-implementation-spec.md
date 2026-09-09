@@ -1,50 +1,49 @@
-# Jalan Sendiri — Technical Specification & Asset Pipeline
+# Jalan Sendiri — Technical Specification (Narrative Adventure Engine)
 
-## 1. System Architecture Update
+## 1. Engine & Project Structure
+- **Engine:** Godot Engine 4.3 LTS (GDScript).
+- **Target:** Mobile Android (Portrait 1080x1920) / Desktop Preview.
+- **Architecture:** Scene-driven finite state machine.
 
-### State Machine Multi-Lantai (Per 1 Mini Chapter)
 ```text
-GameState
-├── current_chapter (1..4)
-├── current_mini_chapter (1..5)
-├── current_expedition_floor (1..3)
-│   ├── Floor 1: 3-4 steps (Tier 1 stages)
-│   ├── Floor 2: 5-6 steps (Tier 2 stages)
-│   └── Floor 3: 7 steps + Final Boss Stage (Tier 3 stages)
-├── current_step (0..max_steps)
-└── active_floor_graph
+res://
+├── assets/
+│   ├── backgrounds/         # bg_main_menu, bg_college_room, bg_campus, bg_coffee_stall
+│   ├── sprites/             # protagonist, father, mother, dosen, cafe_girl, uncle, etc.
+│   ├── audio/               # bgm_warm_loop, sfx_keyboard, sfx_paper, sfx_phone, sfx_tea
+│   └── fonts/               # Nunito.ttf
+├── scenes/
+│   ├── MainMenu.tscn        # Menu awal profesional
+│   ├── chapters/
+│   │   ├── ch1/             # Scene mini chapter 1.1 s/d 1.5
+│   │   │   ├── Ch1_1_Skripsi.tscn
+│   │   │   ├── Ch1_2_FamilyWA.tscn
+│   │   │   ├── Ch1_3_Sidang.tscn
+│   │   │   ├── Ch1_4_Wisuda.tscn
+│   │   │   └── Ch1_5_MejaMakan.tscn
+│   │   ├── ch2/             # Mini chapter 2.1 s/d 2.5
+│   │   ├── ch3/             # Mini chapter 3.1 s/d 3.5
+│   │   └── ch4/             # Mini chapter 4.1 s/d 4.5
+│   └── microgames/          # Prefab interaksi mikro reusable
+│       ├── TypingCoding.tscn
+│       ├── ScratchPaper.tscn
+│       ├── PhoneMessage.tscn
+│       └── BrewCoffee.tscn
+├── scripts/
+│   ├── autoload/
+│   │   ├── GameState.gd     # Save/load progres chapter aktif
+│   │   └── AudioManager.gd  # Controller audio global
+│   └── dialogue/
+│       └── DialogueBox.gd   # Controller typewriter dialog & pilihan
+└── project.godot
 ```
 
-### Algoritma Peta Ekspedisi Multi-Kolom
-Peta per lantai dibuat dengan sistem graf terarah (*Directed Acyclic Graph* / DAG) dari kiri ke kanan atau bawah ke atas:
-- Jumlah Kolom / Langkah: Sesuai konfigurasi lantai (Lt 1: 4 kolom; Lt 2: 6 kolom; Lt 3: 8 kolom).
-- Setiap kolom memiliki 2–3 node pilihan bercabang.
-- **Aturan Non-Repeating:** Generator memeriksa node pendahulu langsung (`parent_nodes`); tipe stage yang sama tidak akan ditempatkan berturut-turut pada cabang yang terhubung langsung.
+## 2. Micro-Interaction Reusable Modules
+1. **`TypingCoding.tscn`:** Menangkap sentuhan layar untuk memajukan kode program di editor teks, menghasilkan suara ketukan keyboard mekanik.
+2. **`PhoneMessage.tscn`:** Simulasi antarmuka aplikasi pesan WA dengan gelembung chat yang muncul satu per satu dengan pilihan balasan cepat.
+3. **`ScratchPaper.tscn`:** Interaksi menggeser jari di atas dokumen untuk mencoret catatan koreksi.
 
-## 2. Asset Generation & Implementation Pipeline
-
-### Phase 1: High-Fidelity Backgrounds
-- Dibuat menggunakan model generator gambar berbasis prompt *A Space for the Unbound style*.
-- Format: PNG 1080x1920 (Portrait Mobile) dan 1920x1080 (Landscape Adaptive).
-- Lokasi: `res://assets/backgrounds/`.
-
-### Phase 2: Main Menu UI & Settings Modal
-- Scene: `res://scenes/MainMenu.tscn`.
-- Skrip: `res://scripts/MainMenu.gd`.
-- Fitur:
-  - Tombol Permainan Baru (memunculkan modal konfirmasi jika sudah ada savegame).
-  - Tombol Lanjutkan Game (disabled jika belum ada savegame).
-  - Modal Pengaturan: Slider BGM (Linear to Decibels), Slider SFX, Toggle Fullscreen.
-  - Modal Kredit: Catatan apresiasi naratif.
-
-### Phase 3: Stage Nodes & Map Redesign (Integrated Strategies)
-- Scene: `res://scenes/ExpeditionMap.tscn`.
-- Skrip: `res://scripts/ExpeditionMap.gd` & `res://scripts/map/ExpeditionNode.gd`.
-- Visual: Menggambar garis konektor antar node menggunakan fungsi `_draw()` bawaan Godot (`draw_dashed_line`) dengan warna pensil cokelat lembut.
-
-### Phase 4: Stage Handlers Mini Chapter 1.1
-- 4 Scene Stage Khusus:
-  1. `res://scenes/stages/StageBattle.tscn` (Battle vs Bug Skripsi / Dosen).
-  2. `res://scenes/stages/StageCoffee.tscn` (Minigame / Dialog warung kopi kampus).
-  3. `res://scenes/stages/StageShop.tscn` (Fotokopi & Bank).
-  4. `res://scenes/stages/StageDilemma.tscn` (Dilema tugas vs koding).
+## 3. Save & Load System
+- File: `user://savegame.json`.
+- Menyimpan: `player_name`, `unlocked_chapter` (1..4), `unlocked_mini_chapter` (1..5), dan riwayat pilihan respon penting.
+- Pemain dapat memilih scene mana saja yang sudah pernah diselesaikan melalui menu riwayat adegan.
