@@ -6,8 +6,8 @@ Mode: Full Mode
 ## 1. Summary & Core Narrative Revision
 Game mobile 2D roguelike deckbuilder psikologis-emosional dengan nuansa visual ala *A Space for the Unbound*. Game ini mengangkat kisah seorang pemuda yang terjebak dalam ekspektasi orang tua. Alur dimulai dari masa kuliah semester akhir jurusan pendidikan (terpaksa masuk demi orang tua, meski ia mencintai teknik informatika/coding). Setelah lulus tepat waktu sebagai lulusan terbaik peringkat ke-2, ia tetap dihakimi karena bukan peringkat pertama. Merasa seluruh usahanya sia-sia dan hanya diukur oleh angka serta gengsi, keputusasaan mendalam membawanya pada tindakan bunuh diri di kamar kosnya.
 
-**The Reality Plot Twist:**
-Seluruh perjalanan petualangan, perjuangan keluar rumah, manis-pahitnya asmara, hingga pertempuran hidup mandiri yang dimainkan sepanjang game sebenarnya adalah **proyeksi imajinasi/halusinasi sadar terakhir sang tokoh utama sebelum nafasnya berhenti**. Di detik-detik terakhir hidupnya di dunia nyata, ia tersenyum melihat alter-egonya yang di dalam imajinasi berani memilih jalan hidup sendiri dan memperjuangkannya, meskipun jalan itu sulit dan tidak sempurna.
+- **The Reality Plot Twist & Akar Keputusasaan:**
+  Alasan Rian mengakhiri hidupnya bukan sekadar kegagalan meraih peringkat pertama, melainkan kesadaran dingin bahwa **ia tidak akan pernah diizinkan memiliki hidupnya sendiri**. Sepanjang hidupnya, orang tuanya memegang kendali absolut atas setiap pilihan. Ketika berkas lamaran pekerjaan pun telah ditandatangani sepihak oleh orang tuanya tanpa izin, Rian tersadar bahwa kontrol ini akan mengikatnya seumur hidup sampai ia mati. Di kamar kosnya, rasa sesak yang tak berujung membuatnya meminum racun. Seluruh 4 chapter yang dimainkan adalah imajinasi/halusinasi sadar terakhirnya: sebuah impian tentang keberanian yang tak pernah sanggup ia ambil di dunia nyata.
 
 ## 2. Updated Chapter Scope (4 Chapters, 20 Mini Chapters)
 Setiap Chapter memiliki 5 Mini Chapter (Total 20 Mini Chapter).

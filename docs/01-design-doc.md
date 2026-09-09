@@ -2,11 +2,45 @@
 
 ## 1. Master Narrative Structure (The 4 Chapters Arc)
 
-### Prologue Nyata: "Dua Angka di Lembar Ijazah"
-- Tokoh Utama (Rian) duduk di kamar kosnya yang remang-remang.
-- Flashback: Menyelesaikan skripsi jurusan Pendidikan sambil begadang sembunyi-sembunyi belajar koding dan membuat skrip program kecil karena itu satu-satunya pelarian jiwanya.
-- Wisuda: Lulus tepat waktu, predikat Lulusan Terbaik Peringkat 2. Di hadapan kerabat, orang tuanya tidak memuji, melainkan bertanya: *"Kenapa cuma peringkat 2? Siapa yang peringkat 1? Kenapa kamu tidak bisa seperti dia?"*
-- Momen Patah: Menatap cermin dan tersadar bahwa apapun yang ia korbankan tidak akan pernah cukup. Terjebak dalam jurang keputusasaan, ia meminum racun/obat di kamar kosnya. Saat kesadarannya perlahan meredup, pikirannya menciptakan dunia alternatif: *"Seandainya malam itu aku punya keberanian untuk keluar dari pintu itu dan menempuh jalanku sendiri..."*
+### Alasan Nyata Keputusan Bunuh Diri (The Root of Despair)
+Karakter utama (Rian) mengakhiri hidupnya bukan semata-mata karena merasa usahanya sia-sia saat meraih peringkat kedua, melainkan karena **beban luar biasa dari kontrol absolut orang tuanya**. 
+Sepanjang hidupnya—mulai dari sekolah yang dimasuki, teman yang boleh ditemui, jurusan kuliah yang diambil, hingga rencana pekerjaan dan pernikahan—selalu diatur secara sepihak. Di titik wisuda, ketika orang tuanya bahkan telah menyiapkan formulir kerja dan relasi orang dalam tanpa bertanya, Rian sampai pada kesimpulan mutlak yang mengerikan: 
+**"Berapa pun usiaku nanti, aku tidak akan pernah memiliki hidupku sendiri. Mereka akan terus mengendalikanku sampai aku mati."**
+Ketidakmampuan melihat masa depan di mana ia bebas bernafas inilah yang membuatnya meminum racun di kamar kosnya. Petualangan melangkah keluar rumah yang dimainkan dalam game adalah proyeksi imajinasi terakhirnya: sebuah impian tentang keberanian yang tak pernah sanggup ia ambil di dunia nyata.
+
+---
+
+### Rincian Lengkap Chapter 1: "Tuntutan & Retakan Awal" (1.1 s/d 1.5)
+
+#### Mini Chapter 1.1: "Revisi Bab 4 & Pelarian Tengah Malam"
+- **Fokus Cerita:** Menghadapi beban menyelesaikan skripsi Jurusan Pendidikan yang sejak awal dipaksakan orang tua. Di sela kelelahan revisi, Rian sembunyi-sembunyi belajar koding dan membuat program kecil di laptop tua sebagai satu-satunya ruang pelarian di mana ia merasa berdaulat atas pikirannya.
+- **Bentuk Kontrol:** Telepon rutin orang tua yang mengawasi jam belajar, tuntutan lulus cepat tanpa peduli kondisi mentalnya.
+- **Rintangan / Stage:** Draf Bab 4 Tercoret, Kacamata Buram Dosen Pembimbing, Kantuk Dini Hari, Warung Kopi Belakang Kampus.
+- **Bos 1.1:** *Draf Skripsi Bertinta Merah* (Representasi dinding akademis yang harus diruntuhkan demi bisa segera bebas dari kampus).
+
+#### Mini Chapter 1.2: "Grup WhatsApp Keluarga & Standar Tak Masuk Akal"
+- **Fokus Cerita:** Tekanan sosial dari keluarga besar. Grup chat keluarga menjadi etalase perbandingan di mana orang tua Rian merasa terancam gengsinya jika anaknya tidak lebih unggul dari anak paman/bibi.
+- **Bentuk Kontrol:** Orang tua mendikte bagaimana Rian harus bersikap, apa yang boleh diunggah di media sosial, dan menuntut agar nilai skripsinya menjadi yang tertinggi di angkatan untuk bahan pamer keluarga.
+- **Rintangan / Stage:** Broadcast Hoax Doa Sukses, Pesan Suara Ibu yang Menangis Dramatis, Rekening Menipis di Akhir Bulan.
+- **Bos 1.2:** *Etalase Gengsi Keluarga* (Tekanan tak terlihat bahwa nilai seorang anak diukur dari standing sosial orang tua).
+
+#### Mini Chapter 1.3: "Ujian Sidang & Hilangnya Hak Memilih"
+- **Fokus Cerita:** Hari pelaksanaan sidang skripsi. Rian berhasil mempertahankan penelitiannya di hadapan dosen penguji. Namun saat keluar ruangan dengan nilai A, tidak ada rasa bangga atau bahagia. Ia menyadari ijazah yang akan didapatkannya bukanlah miliknya, melainkan milik orang tuanya.
+- **Bentuk Kontrol:** Ayah mengirim pesan sebelum sidang: *"Awas kalau nilaimu jelek, Papa sudah malu cerita ke teman kantor kalau kamu mau lulus."*
+- **Rintangan / Stage:** Dosen Penguji Killer, Rasa Hampa Usai Sidang, Ucapan Selamat Basa-Basi Teman Angkatan.
+- **Bos 1.3:** *Sindrom Kepalsuan Gelar* (Perasaan terasing dari pencapaian diri sendiri).
+
+#### Mini Chapter 1.4: "Toga Kebanggaan yang Menghimpit (Wisuda)"
+- **Fokus Cerita:** Hari wisuda akbar. Rian dipanggil ke podium sebagai Lulusan Terbaik Peringkat Kedua di fakultas. Namun saat sesi foto keluarga, orang tua tidak tersenyum tulus. Di hadapan kerabat, Ayah melontarkan kritik dingin: *"Kenapa cuma peringkat dua? Siapa yang nomor satu? Kamu itu selalu kurang fokus!"*
+- **Bentuk Kontrol:** Penolakan untuk mengakui kerja keras anak jika tidak sesuai standar absolut mereka.
+- **Rintangan / Stage:** Senyum Kaku di Depan Kamera Studio, Tepuk Tangan Ribuan Orang yang Terdengar Bising, Pertanyaan Kerabat: 'Habis Ini Penempatan di Mana?'.
+- **Bos 1.4:** *Angka Peringkat Kedua* (Monumen rasa bersalah dan perasaan tidak pernah cukup).
+
+#### Mini Chapter 1.5: "Formulir yang Sudah Ditandatangani & Titik Patah"
+- **Fokus Cerita:** Malam setelah wisuda di rumah keluarga. Ayah meletakkan map cokelat berisi berkas lamaran instansi yang sudah diisi dan ditandatangani sepihak oleh koneksi orang dalam. Ketika Rian mencoba berkata pelan bahwa ia ingin melamar di perusahaan teknologi, Ayah mengamuk dan membentak: *"Kamu anak tidak tahu diri! Kamu hidup dari uang Papa, sampai mati pun kamu harus dengar apa kata Papa!"*
+- **Titik Patah (The Breaking Point):** Rian tersadar dengan dingin: tidak ada kompromi. Tidak ada hari esok di mana ia akan diizinkan menjadi dirinya sendiri. Ia kembali ke kamar kosnya malam itu. Di atas kasur tipisnya, keputusasaan menutup seluruh harapannya. Ia memilih bunuh diri.
+- **Bos 1.5 (Puncak Chapter 1):** *Bayangan Otoritas Ayah* (Wujud trauma psikologis dan figur absolut yang mencengkeram kehidupannya).
+- **Transisi:** Saat racun mulai merenggut kesadarannya, muncul ilusi alternatif di mana Rian tidak meminum racun itu, melainkan mengemas ransel dan melangkah keluar rumah menuju terminal perantauan (memulai Chapter 2).
 
 ---
 
