@@ -1,0 +1,275 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmainmenu01"]
+
+[ext_resource type="Script" path="res://scripts/MainMenu.gd" id="1_mainmenu"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/bg_main_menu.png" id="2_bg"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mainmenu")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Tint" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12, 0.1, 0.15, 0.3)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = 160.0
+offset_right = -80.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="TitleBox" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MainTitle" type="Label" parent="VBoxContainer/TitleBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.98, 0.92, 1)
+theme_override_colors/font_shadow_color = Color(0.2, 0.15, 0.1, 0.8)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 6
+theme_override_font_sizes/font_size = 56
+text = "JALAN SENDIRI"
+horizontal_alignment = 1
+
+[node name="SubTitle" type="Label" parent="VBoxContainer/TitleBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.55, 1)
+theme_override_font_sizes/font_size = 24
+text = "Sebuah Perjalanan Mencari Diri"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MenuButtons" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer/MenuButtons"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "LANJUTKAN PERJALANAN"
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer/MenuButtons"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "PERMAINAN BARU"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer/MenuButtons"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "PENGATURAN"
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer/MenuButtons"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "TENTANG GAME"
+
+[node name="SettingsModal" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -440.0
+offset_top = -300.0
+offset_right = 440.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsModal"]
+layout_mode = 2
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 28
+alignment = 1
+
+[node name="ModalTitle" type="Label" parent="SettingsModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "⚙ PENGATURAN AUDIO"
+horizontal_alignment = 1
+
+[node name="BGMControl" type="VBoxContainer" parent="SettingsModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BGMLabel" type="Label" parent="SettingsModal/MarginContainer/VBoxContainer/BGMControl"]
+layout_mode = 2
+text = "Volume Musik Latar (BGM):"
+
+[node name="BGMSlider" type="HSlider" parent="SettingsModal/MarginContainer/VBoxContainer/BGMControl"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+value = 75.0
+
+[node name="SFXControl" type="VBoxContainer" parent="SettingsModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SFXLabel" type="Label" parent="SettingsModal/MarginContainer/VBoxContainer/SFXControl"]
+layout_mode = 2
+text = "Volume Efek Suara (SFX):"
+
+[node name="SFXSlider" type="HSlider" parent="SettingsModal/MarginContainer/VBoxContainer/SFXControl"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+value = 85.0
+
+[node name="CloseSettingsButton" type="Button" parent="SettingsModal/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "SIMPAN & TUTUP"
+
+[node name="CreditsModal" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -440.0
+offset_top = -340.0
+offset_right = 440.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CreditsModal"]
+layout_mode = 2
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreditsModal/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="CreditsTitle" type="Label" parent="CreditsModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "📖 TENTANG JALAN SENDIRI"
+horizontal_alignment = 1
+
+[node name="CreditsDesc" type="Label" parent="CreditsModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Game ini didedikasikan bagi siapa saja yang pernah merasa bahwa usahanya tidak pernah cukup di mata orang lain.
+
+Terinspirasi dari kehangatan visual A Space for the Unbound dan kedalaman mekanik roguelike deckbuilder.
+
+Dibuat dengan cinta, air mata, dan secangkir kopi malam hari."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CloseCreditsButton" type="Button" parent="CreditsModal/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "KEMBALI"
+
+[node name="ConfirmNewGameModal" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -220.0
+offset_right = 420.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ConfirmNewGameModal"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfirmNewGameModal/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="ConfirmTitle" type="Label" parent="ConfirmNewGameModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.25, 0.25, 1)
+theme_override_font_sizes/font_size = 28
+text = "TIMPA DATA LAMA?"
+horizontal_alignment = 1
+
+[node name="ConfirmDesc" type="Label" parent="ConfirmNewGameModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Kamu memiliki progres tersimpan. Memulai permainan baru akan mereset seluruh tabungan dan chapter dari nol."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ConfirmNewGameModal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="YesButton" type="Button" parent="ConfirmNewGameModal/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(160, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "YA, MULAI BARU"
+
+[node name="NoButton" type="Button" parent="ConfirmNewGameModal/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(160, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "BATALKAN"

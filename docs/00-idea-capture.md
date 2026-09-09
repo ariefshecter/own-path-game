@@ -1,27 +1,30 @@
-# Idea Capture: Own Path Roguelike (Working Title)
+# Idea Capture: Jalan Sendiri (Revised Architecture)
 
-Date: 2026-09-08 (Updated)
+Date: 2026-09-09
 Mode: Full Mode
 
-## 1. Summary
-Game mobile Android 2D bergenre roguelike deckbuilder naratif. Menampilkan kontras kuat: visual bergaya hangat, nostaljik, cerah, dan nampak *fun* (ala *A Space for the Unbound*), namun mengusung tema cerita yang emosional dan mendalam. Mengisahkan perjuangan seorang anak yang keluar dari ekspektasi orang tuanya, melewati manis dan getirnya hubungan asmara yang akhirnya kandas, menghadapi desakan konstan orang tua saat gagal, serta risiko *Bad Ending* menyerah pulang demi kebahagiaan semu orang tua.
+## 1. Summary & Core Narrative Revision
+Game mobile 2D roguelike deckbuilder psikologis-emosional dengan nuansa visual ala *A Space for the Unbound*. Game ini mengangkat kisah seorang pemuda yang terjebak dalam ekspektasi orang tua. Alur dimulai dari masa kuliah semester akhir jurusan pendidikan (terpaksa masuk demi orang tua, meski ia mencintai teknik informatika/coding). Setelah lulus tepat waktu sebagai lulusan terbaik peringkat ke-2, ia tetap dihakimi karena bukan peringkat pertama. Merasa seluruh usahanya sia-sia dan hanya diukur oleh angka serta gengsi, keputusasaan mendalam membawanya pada tindakan bunuh diri di kamar kosnya.
 
-## 2. Core Pillars & Updates
-- **Karakter Utama (Fixed Male + Custom Name):**
-  - Tokoh utama adalah seorang laki-laki muda (fixed male) untuk menjaga fokus, keintiman emosional, dan kedalaman narasi seputar tekanan maskulinitas lokal (beban menjadi tulang punggung, ekspektasi finansial, gengsi pekerjaan di mata keluarga).
-  - Pemain dapat memasukkan nama panggilannya sendiri di awal permainan yang akan digunakan di seluruh dialog orang tua, pesan pasangan, dan surat kabar.
-- **Visual Aesthetic (A Space for the Unbound Style):**
-  - Bukan dark/gloomy UI. Menggunakan palet cerah, hangat, bernuansa kertas gambar, langit sore, warna pastel cerah, dan elemen retro yang ramah dan ekspresif.
-- **Narrative Sub-plot Asmara (Bittersweet Romance):**
-  - Di awal perjalanan (Chapter 1), karakter menemukan cinta yang memberi semangat dan kehangatan.
-  - Seiring beratnya realitas hidup mandiri dan ekonomi (Chapter 2), hubungan mulai renggang akibat kelelahan dan prioritas hidup.
-  - Di Chapter 3, hubungan berakhir kandas, meninggalkan luka sekaligus kenangan yang membentuk kedewasaannya sebelum akhir hayat.
-- **Unsur Komedi Satir & Relate (Tragicomic Flavour):**
-  - Humor lokal yang jenaka dan konyol untuk meringankan beban cerita: mie instan akhir bulan, tetangga julid pamer pencapaian anak, broadcast WA keluarga yang aneh-aneh, kucing liar kosan yang menghakimi, dan respon sarkas karakter terhadap kesialan hidupnya sendiri.
-- **Mekanik Kegagalan & Desakan Orang Tua:**
-  - Setiap kali pemain gagal di mini chapter (Mental = 0), muncul layar khusus telepon/pesan dari orang tua yang menekan dan membujuk:
-    *"Tuh kan, kamu tidak akan bisa hidup sendiri. Pulanglah, ikuti kata kami, jangan bikin malu keluarga."*
-  - Pemain dihadapkan pada 2 pilihan krusial:
-    1. **"Tolak & Coba Lagi"**: Mengulang mini chapter tersebut dari lantai 1.
-    2. **"Tunduk & Pulang"**: Memicu **Bad Ending** — Menampilkan cutscene orang tua tersenyum puas dan bangga memamerkan anaknya, sementara karakter duduk dengan tatapan hampa tanpa jiwa. Seluruh progres, level, dan tabungan bank **di-reset bersih dari nol**.
-- **Struktur Roguelike:** 3 Chapter, 15 Mini Chapter, 5 Lantai bernode acak ala Arknights IS, perbankan tabungan permanen, pertempuran deckbuilder (Mental vs Energi).
+**The Reality Plot Twist:**
+Seluruh perjalanan petualangan, perjuangan keluar rumah, manis-pahitnya asmara, hingga pertempuran hidup mandiri yang dimainkan sepanjang game sebenarnya adalah **proyeksi imajinasi/halusinasi sadar terakhir sang tokoh utama sebelum nafasnya berhenti**. Di detik-detik terakhir hidupnya di dunia nyata, ia tersenyum melihat alter-egonya yang di dalam imajinasi berani memilih jalan hidup sendiri dan memperjuangkannya, meskipun jalan itu sulit dan tidak sempurna.
+
+## 2. Updated Chapter Scope (4 Chapters, 20 Mini Chapters)
+Setiap Chapter memiliki 5 Mini Chapter (Total 20 Mini Chapter).
+- **Chapter 1: "Tuntutan & Retakan Awal (Masa Kuliah & Skripsi)"** (1.1 s/d 1.5)
+- **Chapter 2: "Langkah Semu & Hangatnya Asmara"** (2.1 s/d 2.5)
+- **Chapter 3: "Realitas Dingin & Kehilangan Arah"** (3.1 s/d 3.5)
+- **Chapter 4: "Penerimaan Akhir & Senyuman di Detik Terakhir"** (4.1 s/d 4.5)
+
+## 3. Floor & Stage Progression Mechanic
+Klarifikasi struktur run:
+Dalam **1 Mini Chapter**, terdapat **3 Lantai Ekspedisi Penuh (Full Expedition Floors)** seperti peta visual di screenshot:
+- **Lantai 1 (Early Journey):** Peta bercabang dengan 4 variasi stage Tier 1. Pemain melangkah sebanyak 3–4 langkah/stage dari awal lantai menuju gerbang lantai 2. Tidak ada pengulangan stage yang sama pada satu jalur.
+- **Lantai 2 (Mid Escalation):** Peta bercabang dengan 6 variasi stage Tier 2. Pemain melangkah 5–6 langkah/stage menuju gerbang lantai 3.
+- **Lantai 3 (Climax & Boss):** Peta bercabang dengan 8 variasi stage Tier 3 + 1 Stage Bos Mini Chapter di puncak lantai 3. Pemain melangkah 7 langkah sebelum menantang Bos.
+- Jika pemain gagal di salah satu lantai sebelum bos lantai 3 kalah: mengulang dari Lantai 1 mini chapter tersebut (dengan intervensi telepon desakan orang tua).
+
+## 4. UI Architecture & Quality Bar
+Bukan prototipe kasar, melainkan produk komersial profesional:
+- **Main Menu UI:** Layar pembuka profesional dengan tombol "Permainan Baru", "Lanjutkan Game", "Pengaturan (Volume BGM/SFX, Resolusi, Safe Area Mobile)", dan "Kredit".
+- **Design System Aset Lengkap:** Rencana aset komprehensif mencakup latar belakang ilustrasi, visual kartu berstempel, pin/node stage dengan konektor garis dinamis, layar popup stage, dan HUD responsif.

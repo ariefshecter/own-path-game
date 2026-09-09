@@ -5,10 +5,12 @@ extends Control
 @onready var portrait_rect: TextureRect = $VBoxContainer/DialogueBox/MarginContainer/VBoxContainer/Header/PortraitRect
 @onready var next_btn: Button = $VBoxContainer/NextButton
 @onready var skip_btn: Button = $VBoxContainer/SkipButton
+@onready var scene_bg: TextureRect = $Background
 
 const SPRITE_RIAN = preload("res://assets/sprites/protagonist_rian.png")
 const SPRITE_FATHER = preload("res://assets/sprites/father.png")
 const SPRITE_MOTHER = preload("res://assets/sprites/mother.png")
+const SPRITE_DOSEN = preload("res://assets/sprites/dosen_pembimbing.png")
 
 var current_step: int = 0
 var dialogues: Array = []
@@ -16,44 +18,49 @@ var dialogues: Array = []
 func _ready() -> void:
 	dialogues = [
 		{
-			"speaker": "Suasana Meja Makan",
+			"speaker": "Ruang Kamar Kos (Semester 8)",
 			"portrait": null,
-			"text": "Malam itu hening. Hanya ada suara denting sendok beradu dengan piring kaca dan suara kipas angin berderit lambat di ruang tengah rumah keluarga."
-		},
-		{
-			"speaker": "Ayah",
-			"portrait": SPRITE_FATHER,
-			"text": "\"Bulan depan kamu harus ikut seleksi instansi yang sudah Papa siapkan. Formulirnya sudah Papa isi, kenalan Papa tinggal tanda tangan. Jangan bikin rumit hal mudah.\""
-		},
-		{
-			"speaker": "Ibu",
-			"portrait": SPRITE_MOTHER,
-			"text": "\"Iya le %s... Orang tua itu cuma mau kamu aman. Zaman sekarang cari kerja susah. Mau jadi apa kalau cuma ngejar hobi dan idealisme kosong?\"" % GameState.player_name
+			"text": "Malam itu jam menunjukkan pukul 02:14 dini hari. Di kamar kos berantakan, tumpukan draf skripsi Jurusan Pendidikan tergeletak berserakan dengan coretan spidol merah."
 		},
 		{
 			"speaker": GameState.player_name,
 			"portrait": SPRITE_RIAN,
-			"text": "\"Tapi Ma, Pa... itu bukan jalan yang aku mau. Aku ingin mencoba sesuatu yang kupilih sendiri, walau harus mulai dari nol.\""
+			"text": "Sejak awal, aku tidak pernah ingin berada di jurusan ini. Aku selalu mencintai dunia baris kode dan teknologi. Tapi demi senyum orang tua di kampung, aku menuruti pilihan mereka."
 		},
 		{
-			"speaker": "Ayah",
-			"portrait": SPRITE_FATHER,
-			"text": "(Meletakkan sendok dengan keras) \"Coba sendiri? Dengan modal apa?! Kamu pikir hidup mandiri itu segampang cerita di buku-buku?! Kalau kamu melangkah keluar dari pintu depan, jangan pernah pulang sambil merengek minta tolong!\""
-		},
-		{
-			"speaker": "Ibu",
-			"portrait": SPRITE_MOTHER,
-			"text": "\"Sudahlah %s, minta maaf sama Papamu. Jangan buat malu keluarga besar. Dengarkan orang tua...\"" % GameState.player_name
+			"speaker": "Dosen Pembimbing Skripsi",
+			"portrait": SPRITE_DOSEN,
+			"text": "\"Revisi lagi bab 4 kamu! Kenapa analisis datanya masih kacau begini? Mau lulus tahun ini atau nambah semester lagi?!\""
 		},
 		{
 			"speaker": GameState.player_name,
 			"portrait": SPRITE_RIAN,
-			"text": "Kamu terdiam. Menunduk menatap piring nasi yang baru separuh habis. Kamu sadar, jika malam ini kamu tidak melangkah keluar... kamu tidak akan pernah punya kesempatan untuk hidup atas pilihanmu sendiri."
+			"text": "Di sela-sela lelahnya merevisi teori pendidikan yang tidak kucintai, aku mencuri waktu begadang belajar koding otodidak. Itu satu-satunya pelarian yang membuatku merasa hidup."
 		},
 		{
-			"speaker": "Pintu Depan Rumah",
+			"speaker": "Hari Wisuda (Gedung Serbaguna)",
+			"portrait": null,
+			"text": "Beberapa bulan kemudian. Kamu berhasil lulus tepat waktu. Di panggung megah, namamu diumumkan sebagai Lulusan Terbaik Peringkat Kedua di fakultas."
+		},
+		{
+			"speaker": "Ayah",
+			"portrait": SPRITE_FATHER,
+			"text": "\"Peringkat kedua? Kenapa bukan yang pertama? Siapa yang nomor satu itu? Kenapa kamu selalu tanggung kalau berbuat sesuatu?!\""
+		},
+		{
+			"speaker": "Ibu",
+			"portrait": SPRITE_MOTHER,
+			"text": "\"Iya le %s... Orang tua kan sudah banyak keluar biaya. Kalau cuma nomor dua, tetangga mana ada yang bangga dengarnya...\"" % GameState.player_name
+		},
+		{
+			"speaker": GameState.player_name,
 			"portrait": SPRITE_RIAN,
-			"text": "Tengah malam. Ransel lusuh sudah di pundakmu. Udara dingin menyambut saat gerbang pagar besi berderit pelan. Langkah pertamamu dimulai sekarang."
+			"text": "Dada terasa sesak. Tepuk tangan ribuan orang di aula wisuda terdengar seperti dengung kosong. Apapun yang kukorbankan, seberapa keras pun aku memeras keringat... itu tidak akan pernah cukup."
+		},
+		{
+			"speaker": "Malam Penentuan",
+			"portrait": SPRITE_RIAN,
+			"text": "Di kamar kos yang dingin, memegang lembar ijazah yang terasa hampa, kamu mengambil ranselmu. Keputusan telah bulat: Kamu harus keluar dan mencari jalan hidupmu sendiri."
 		}
 	]
 	
@@ -74,13 +81,14 @@ func update_dialogue() -> void:
 			portrait_rect.visible = false
 		
 		if current_step == dialogues.size() - 1:
-			next_btn.text = "MELANGKAH KE JALAN SENDIRI"
+			next_btn.text = "MULAI EKSPEDISI MINI CHAPTER 1.1"
 		else:
 			next_btn.text = "LANJUT (KETUK UNTUK MEMBACA)"
 	else:
 		_on_finish_prologue()
 
 func _on_next_pressed() -> void:
+	AudioManager.play_card_sfx()
 	current_step += 1
 	if current_step < dialogues.size():
 		update_dialogue()
@@ -88,4 +96,5 @@ func _on_next_pressed() -> void:
 		_on_finish_prologue()
 
 func _on_finish_prologue() -> void:
+	AudioManager.play_coin_sfx()
 	get_tree().change_scene_to_file("res://scenes/HubScreen.tscn")
