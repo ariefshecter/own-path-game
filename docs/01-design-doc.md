@@ -117,21 +117,37 @@ Ketidakmampuan melihat masa depan di mana ia bebas bernafas inilah yang membuatn
 
 #### CHAPTER 3: "Realitas Dingin & Retaknya Harapan" (Krisis Finansial & Patah Hati)
 *Tema emosional: Beban ekonomi menggerus cinta, kesepian perantauan, dan perpisahan.*
-- **Mini Chapter 3.1: Ibu Kos & Token Listrik Sekarat**
-  - Masalah finansial nyata mulai menghantam. Laptop rusak di saat deadline krusial.
-  - Bos 3.1: *Tagihan Tanpa Kompromi*.
-- **Mini Chapter 3.2: Pertengkaran Kecil di Ujung Bulan**
-  - Komunikasi mendingin akibat kelelahan fisik dan rasa frustrasi.
-  - Bos 3.2: *Ego yang Terluka*.
-- **Mini Chapter 3.3: Surat Lamaran yang Tak Pernah Dibalas**
-  - Realitas industri koding tanpa ijazah linier. Penolakan demi penolakan.
-  - Bos 3.3: *Tembok Birokrasi Linieritas*.
-- **Mini Chapter 3.4: Pesan Terakhir: 'Kita Selesai'**
-  - Gadis kedai kopi memilih mundur karena lelah dengan ketidakpastian.
-  - Bos 3.4: *Patah Hati di Kamar Kos Kosong*.
-- **Mini Chapter 3.5: Sakit Sendirian di Musim Hujan**
-  - Demam tinggi tanpa ada yang membuatkan teh hangat. Telepon orang tua berdering tiada henti.
-  - Bos Akhir Chapter 3: *Keputusasaan Mutlak*.
+
+- **Mini Chapter 3.1: "Ibu Kos Penagih Janji & Token Listrik yang Berteriak"**
+  - **Fokus Cerita:** Realitas finansial menghantam tanpa ampun. Klien freelance mangkir bayar setelah kode diserahkan, sisa tabungan ludes, dan laptop tua mendadak mati total (overheat). Token listrik kos berbunyi nyaring di tengah malam hujan, pemilik kos mengetuk pintu menagih sewa bulan kedua.
+  - **Dilema:** Nadia mencoba membantu dengan membelikan makanan atau menawarkan sedikit uang pinjaman, namun harga diri Rian terluka dan ia merasa minder sebagai laki-laki.
+  - **Rintangan / Stage:** Kipas Angin Rusak, Token Listrik Berteriak, Dompet Kosong Melompong.
+  - **Bos 3.1:** *Tagihan Tanpa Kompromi*.
+
+- **Mini Chapter 3.2: "Pertengkaran Kecil di Ujung Bulan & Gelas yang Retak"**
+  - **Fokus Cerita:** Tekanan ekonomi mulai meracuni hubungan asmara. Obrolan hangat perlahan berubah menjadi sensitif dan penuh kecurigaan. Rian yang kelelahan menuduh Nadia tidak memahami beratnya beban mandiri, sementara Nadia merasa Rian menutup diri dan tidak lagi menghargai kehadirannya.
+  - **Titik Gesekan:** Pertengkaran pertama di teras kedai kopi yang berakhir dengan Rian pergi meninggalkan Nadia menangis sendirian di tengah gerimis.
+  - **Rintangan / Stage:** Sindiran Halus, Kebisuan di Pesan Singkat, Ego yang Membakar Kepala.
+  - **Bos 3.2:** *Ego yang Terluka & Kata-kata Kasar*.
+
+- **Mini Chapter 3.3: "Tembok Linieritas & Ratusan Surat Penolakan"**
+  - **Fokus Cerita:** Sadar freelance tidak stabil, Rian mencoba melamar posisi junior programmer di berbagai perusahaan. Namun kenyataan pahit menghadang: ijazah Jurusan Pendidikannya menjadi tembok besar. Puluhan email penolakan otomatis masuk (*"Kualifikasi ijazah tidak linier"*).
+  - **Keraguan Diri:** Rian mulai meragukan apakah keputusannya keluar rumah adalah delusi bodoh, persis seperti yang dulu selalu dikatakan Ayahnya.
+  - **Rintangan / Stage:** Email Template Penolakan, Berkas Portofolio Diabaikan, Pandangan Sinis HRD.
+  - **Bos 3.3:** *Tembok Birokrasi Linieritas*.
+
+- **Mini Chapter 3.4: "Secarik Kertas Terakhir: 'Kita Selesai'"**
+  - **Fokus Cerita:** Puncak kehancuran asmara. Nadia datang ke kamar kos Rian dengan mata sembab. Keluarganya di kampung memintanya pulang untuk dijodohkan, dan melihat ketidakpastian hidup Rian yang semakin tenggelam, Nadia kehabisan daya untuk bertahan.
+  - **Momen Patah Hati:** Nadia meletakkan cangkir kopi dingin dan secarik kertas bertuliskan: *"Maaf Rian, aku juga lelah... kita selesai ya."* Kamar kos mendadak hampa. Rian duduk di lantai dingin memeluk lututnya, kehilangan satu-satunya lentera di perantauannya.
+  - **Rintangan / Stage:** Robekan Foto Berdua, Cangkir Kopi Dingin, Keheningan yang Memekakkan Telinga.
+  - **Bos 3.4:** *Keheningan Kamar Kos Kosong* (Pertarungan batin melawan rasa ditinggalkan).
+
+- **Mini Chapter 3.5: "Demam Menggigil di Musim Hujan & Ujian Keputusasaan"**
+  - **Fokus Cerita:** Puncak kerapuhan fisik dan mental (Climax Chapter 3). Kelelahan kerja malam, makan tidak teratur, dan duka patah hati membuat tubuh Rian tumbang terkena demam tinggi. Ia terbaring menggigil sendirian di kasur tipis tanpa ada yang merawat atau mengambilkan segelas air.
+  - **Ujian Terberat:** Di lantai dingin, ponselnya bergetar menampilkan nama "Ibu". Godaan untuk menekan tombol hijau, mengaku kalah, dan menyerah pulang sangat kuat. Namun dengan nafas tersengal, ia mematikan ponselnya dan memilih bertahan hidup dengan tangannya sendiri.
+  - **Rintangan / Stage:** Halusinasi Demam, Dahaga Tanpa Air, Getaran Panggilan Rumah.
+  - **Bos 3.5 (Puncak Chapter 3):** *Keputusasaan Mutlak & Godaan Menyerah*.
+  - **Transisi ke Chapter 4:** Rian selamat melewati malam demam kritis itu. Dengan tubuh kurus dan tatapan yang mengeras dewasa, ia menyadari bahwa ia telah melewati titik terendah dalam hidupnya. Rasa takutnya telah mati. Dari sinilah babak penerimaan sejati dimulai.
 
 #### CHAPTER 4: "Penerimaan Akhir & Senyuman di Detik Terakhir" (Katarsis & Plot Twist)
 *Tema emosional: Menemukan kedamaian batin, memaafkan masa lalu, dan keindahan mimpi.*
